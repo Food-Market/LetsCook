@@ -1,0 +1,65 @@
+
+@import 'globals';
+@import 'variables';
+
+/* --------------------HEADER------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $color-main;
+    &__img {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        &--logo {
+            width: 15rem;
+            rotate: -10deg;
+        }
+    }
+    &__menu {
+        display: flex;
+        padding: 50px;
+        &--links {
+            align-self: center;
+        }
+        &--links a {
+            margin-right: 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            color: $color-btn;
+            &:hover {
+                border-bottom: 3px solid $color-hover;
+                color: $color-hover;
+            }
+        }
+        &__user {
+            display: flex;
+            align-items: center;
+            margin-left: 2rem;
+            input {
+                height: fit-content;
+                margin: 0 1rem;
+            }
+            &--lens {
+                position: relative;
+                right: 50px;
+                opacity: .4;
+            }
+            &--icons {
+                display: flex;
+                align-items: center;
+            }
+            &--icons i {
+                margin: 0 1rem;
+                color: #ffffff;
+                font-size: 1.5rem;
+                transition: all .2s ease-out;
+                cursor: pointer;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
