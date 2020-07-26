@@ -108,31 +108,54 @@ body {
 .main__carousel {
   padding: 1rem;
   width: auto;
+  overflow: inherit;
+  position: relative;
 }
 .main__carousel--subtitles {
   padding: 1rem;
 }
 .main__carousel__cards {
+  width: auto;
   display: flex;
   justify-content: center;
   box-shadow: 1px 3px 9px 1px #747474;
   padding: 1rem 0;
+}
+.main__carousel__cards:hover .main__carousel__cards__item {
+  opacity: 0.3;
+}
+.main__carousel__cards:hover .main__carousel__cards__item:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }
 .main__carousel__cards--arrow {
   padding: 1rem;
   align-self: center;
 }
 .main__carousel__cards__item {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0.8rem;
-  border: 1px solid red;
+  position: relative;
+  margin: 0 0.5rem;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center center;
+  box-shadow: 1px 3px 9px 1px #747474;
+}
+.main__carousel__cards__item:hover .main__carousel__cards__item__item {
+  transform: translate3d(100px, 0, 0);
 }
 .main__carousel__cards__item img {
   width: 10rem;
+  object-fit: cover;
 }
 .main__carousel__cards__item--titles {
   display: flex;
   justify-content: space-evenly;
   padding: 0.6rem 0;
 }
+.main__carousel__cards__item--titles:hover {
+  opacity: 1;
+}
+
+/* -------------------- MAIN ------------------------- */
