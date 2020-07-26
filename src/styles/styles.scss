@@ -77,13 +77,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 50px;
+        padding: 1.5rem;
         color: $color-main;
         h1 {
             font-style: italic;
             font-size: 2.5rem;
             font-weight: bold;
-            padding-bottom: 1rem;
+            padding: 1rem 0;
         }
         span {
             font-size: 1.3rem;
@@ -95,7 +95,7 @@
         overflow: inherit;
         position: relative;
         &--subtitles {
-            padding: 1rem;
+            padding: 3rem;
         }
         &__cards {
             width: auto;
@@ -141,8 +141,84 @@
             }
         }
     }
+    &__bottom {
+        margin: 3rem;
+        padding: 1.5rem;
+        background-color: $color-btn;
+        border-radius: 5px;
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $color-main;
+            transition: 400ms all;
+            &:hover {
+                color: $color-hover;
+                transform: scale(1.5);
+            }
+        }
+    }
 }
 
-/* -------------------- MAIN ------------------------- */
+/* -------------------- FOOTER ------------------------- */
+
+.footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-main;
+    &__menu {
+        display: flex;
+        justify-content: center;
+        &--links {
+            padding: 1rem;
+            a {
+                margin-right: 4rem;
+                color: $color-btn;
+                font-size: 1.2rem;
+                font-weight: 600;
+                text-decoration: none;
+                &:hover {
+                    border-bottom: 3px solid $color-hover;
+                    color: $color-hover;
+                }
+            }
+        }
+    }
+    &__social {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 0;
+        &--icons {
+            span {
+                color: $color-light;
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-right: .7rem;
+            }
+            .fa-facebook {
+                color: $color-light;
+                font-size: 2rem;
+                margin-right: .7rem;
+                cursor: pointer;
+            }
+            .fa-instagram {
+                color: $color-light;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+    &__bottom {
+        align-self: center;
+        margin: 1rem;
+        &--small {
+            padding: 1rems;
+            color: $color-light;
+            font-weight: 600;
+        }
+    }
+}
 
 
