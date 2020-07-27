@@ -2,6 +2,7 @@ $color-main: #264653;
 $color-btn: #e9c46a;
 $color-hover: #2a9d8f;
 $color-light: #dbe4ee;
+$color-backgroud: #ffffff;
 $debug-border: 1px solid red;
 $textFont: "Roboto Mono",
 monospace;
@@ -33,11 +34,48 @@ sans-serif;
     font-size: 25px;
 }
 
+@mixin ingredientStepStyle {
+    width: 100%;
+    height: 90%;
+    background-color: $color-backgroud;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50% 50%;
+}
+
+@mixin ingredientsReciepeImagesStyle {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+    justify-self: center;
+}
+
+@mixin ingredientNameStyle {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: $titleFont;
+    font-size: 20px;
+    color: $color-main;
+}
+
+
+/*------------------------------BODY------------------------------*/
+
 body {
     background-color: $color-light;
     margin: 0;
     width: 100%;
 }
+
+
+/*------------------------------HEADER------------------------------*/
 
 header {
     width: 100%;
@@ -108,6 +146,9 @@ nav .header-container {
     cursor: pointer;
     color: $color-main;
 }
+
+
+/*------------------------------MAIN------------------------------*/
 
 main {
     width: 70%;
@@ -223,4 +264,63 @@ main .main-introduction {
     align-self: center;
     justify-self: center;
     cursor: pointer;
+}
+
+main .main-ingredients {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 15px;
+}
+
+.main-ingredients .main-ingredients__container1 {
+    @include ingredientStepStyle;
+}
+
+.main-ingredients__container1 .main-ingredients__image {
+    background-image: url(https://i.imgur.com/FaeMCS1.jpg);
+    @include ingredientsReciepeImagesStyle;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.main-ingredients__container1 .main-ingredientes__name {
+    @include ingredientNameStyle;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.main-ingredients__container1 .main-ingredients__quantity {
+    margin: 0;
+}
+
+
+/* @mixin ingredientQuantityStyle {
+     margin: 0;
+} */
+
+.main-ingredients .main-ingredients__container2 {
+    @include ingredientStepStyle;
+}
+
+.main-ingredients .main-ingredients__container3 {
+    @include ingredientStepStyle;
+}
+
+.main-ingredients .main-ingredients__container4 {
+    @include ingredientStepStyle;
+}
+
+.main-ingredients .main-ingredients__container5 {
+    @include ingredientStepStyle;
+}
+
+.main-ingredients .main-ingredients__container6 {
+    @include ingredientStepStyle;
+}
+
+.main-ingredients .main-ingredients__container7 {
+    @include ingredientStepStyle;
 }
