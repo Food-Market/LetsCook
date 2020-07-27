@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./src/styles/styles.css">
     <title>LetsCook - Food Market </title>
 </head>
@@ -25,6 +26,7 @@
                 <div class="header__menu__user--icons">
                     <i class="fas fa-shopping-basket"></i>
                     <i class="far fa-user"></i>
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
         </section>
@@ -39,9 +41,13 @@
             <h2 class="main__carousel--subtitles">BREAKFAST</h2>
 
             <div class="main__carousel__cards">
-                <div class="main__carousel__cards--arrow">
-                    <a href="#">left</a>
-                </div>
+
+                <!-- <div class="main__carousel__cards__btn">
+                    <button type="button" class="main__carousel__cards__btn--arrow  slick-prev">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </button>
+                </div> -->
+
                 <div class="main__carousel__cards__item">
                     <img src="./src/styles/assets/picture.svg" alt="">
                     <div class="main__carousel__cards__item--titles">
@@ -85,9 +91,11 @@
                     </div>
                 </div>
 
-                <div class="main__carousel__cards--arrow">
-                    <a href="#">right</a>
-                </div>
+                <!-- <div class="main__carousel__cards__btn">
+                    <button type="button" class="main__carousel__cards__btn--arrow  slick-next">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </button>
+                </div> -->
             </div>
 
             <h2 class="main__carousel--subtitles">LUNCHES</h2>
@@ -225,5 +233,9 @@
             <small class="footer__bottom--small"> LetsCook - Food Market © 2020</small>
         </span>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./carousel.js"></script>
 </body>
 </html>

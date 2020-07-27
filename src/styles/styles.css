@@ -19,6 +19,48 @@ body {
 
 /* ------------------VARIABLES--------------------*/
 /* ------------------PALLETE--------------------*/
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+/*-------------Tablet-------------------*/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+
+  .header__menu--links {
+    display: none;
+  }
+  .header__menu__user {
+    margin-left: 0rem;
+  }
+  .header__menu__user--icons {
+    padding: 1rem;
+  }
+
+  .fa-user {
+    display: none;
+  }
+
+  .fa-bars {
+    display: inline !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 10px;
+  }
+
+  .header__menu {
+    padding-right: 0;
+  }
+  .header__menu__user input {
+    display: none;
+  }
+  .header__menu__user--lens {
+    display: none;
+  }
+}
 /* --------------------HEADER------------------------- */
 .header {
   display: flex;
@@ -36,7 +78,7 @@ body {
 }
 .header__menu {
   display: flex;
-  padding: 50px;
+  padding: 2rem;
 }
 .header__menu--links {
   align-self: center;
@@ -81,6 +123,9 @@ body {
 .header__menu__user--icons i:hover {
   transform: scale(1.2);
 }
+.header__menu__user .fa-bars {
+  display: none;
+}
 
 /* -------------------- MAIN ------------------------- */
 .main {
@@ -106,6 +151,7 @@ body {
   font-size: 1.3rem;
 }
 .main__carousel {
+  /* -------------------- CAROUSEL ---------------- */
   padding: 1rem;
   width: auto;
   overflow: inherit;
@@ -113,9 +159,11 @@ body {
 }
 .main__carousel--subtitles {
   padding: 3rem;
+  font-weight: 600;
+  color: #264653;
 }
 .main__carousel__cards {
-  width: auto;
+  width: 65rem;
   display: flex;
   justify-content: center;
   box-shadow: 1px 3px 9px 1px #747474;
@@ -128,9 +176,22 @@ body {
   transform: scale(1.5);
   opacity: 1;
 }
-.main__carousel__cards--arrow {
-  padding: 1rem;
+.main__carousel__cards__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.main__carousel__cards__btn--arrow {
+  width: 4rem;
   align-self: center;
+  cursor: pointer;
+}
+.main__carousel__cards__btn--arrow i {
+  font-size: 2rem;
+  color: #264653;
+  border: 1px solid #e9c46a;
 }
 .main__carousel__cards__item {
   position: relative;

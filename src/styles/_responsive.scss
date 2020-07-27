@@ -1,0 +1,57 @@
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+
+/*-------------Tablet-------------------*/
+
+@media screen and (max-width:768px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .header__menu {
+        &--links {
+            display: none;
+        }
+        &__user {
+            margin-left: 0rem;
+            &--icons {
+                padding: 1rem;
+            }
+        }
+    }
+
+    .fa-user {
+        display: none;
+    }
+
+    .fa-bars {
+        display: inline !important;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    .header {
+        &__menu {
+            padding-right: 0;
+            &__user {
+                input {
+                    display: none;
+                }
+                &--lens {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

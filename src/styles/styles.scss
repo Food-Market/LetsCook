@@ -1,6 +1,8 @@
 
 @import 'globals';
 @import 'variables';
+@import 'responsive';
+
 
 /* --------------------HEADER------------------------- */
 
@@ -19,7 +21,7 @@
     }
     &__menu {
         display: flex;
-        padding: 50px;
+        padding: 2rem;
         &--links {
             align-self: center;
         }
@@ -62,6 +64,9 @@
                     transform: scale(1.2);
                 }
             }
+            .fa-bars {
+                display: none;
+            }
         }
     }
 }
@@ -89,16 +94,18 @@
             font-size: 1.3rem;
         }
     }
-    &__carousel {
+    &__carousel {        /* -------------------- CAROUSEL ---------------- */
         padding: 1rem;
         width: auto;
         overflow: inherit;
         position: relative;
         &--subtitles {
             padding: 3rem;
+            font-weight: 600;
+            color: $color-main;
         }
         &__cards {
-            width: auto;
+            width: 65rem;
             display: flex;
             justify-content: center;
             box-shadow: 1px 3px 9px 1px rgb(116, 116, 116);
@@ -110,9 +117,20 @@
                 transform: scale(1.5);
                 opacity: 1;
             }
-            &--arrow {
-                padding: 1rem;
-                align-self: center;
+            &__btn {
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                &--arrow {
+                    width: 4rem;
+                    align-self: center;
+                    cursor: pointer;
+                    i {
+                        font-size: 2rem;
+                        color: $color-main;
+                        border: 1px solid $color-btn;
+                    }
+                }
             }
             &__item {
                 position: relative;
@@ -159,6 +177,8 @@
         }
     }
 }
+
+
 
 /* -------------------- FOOTER ------------------------- */
 
@@ -220,5 +240,7 @@
         }
     }
 }
+
+
 
 
