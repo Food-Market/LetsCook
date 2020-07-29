@@ -3,3 +3,50 @@
  *  CSS CAROUSEL JQUERY
  * ====================================================================================================================*/
 
+
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 90vw;
+    min-height: 40vh;
+}
+
+.card-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 3px 9px 1px rgb(116, 116, 116);
+    &:hover .card {
+        opacity: 0.3;
+    }
+    &:hover .card:hover {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+.card {
+    position: relative;
+    margin: .6rem .9rem;
+    display: inline-block;
+    cursor: grab;
+    transition: 450ms all;
+    border-radius: $card__border-radius;
+    transform-origin: center center;
+    box-shadow: 1px 3px 9px 1px rgb(116, 116, 116);
+    &:hover .card {
+        transform: translate3d(100px, 0, 0);
+    }
+    img {
+        object-fit: cover;
+    }
+    &__titles {
+        display: flex;
+        justify-content: space-evenly;
+        padding: .6rem 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

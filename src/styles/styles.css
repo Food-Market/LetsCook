@@ -1,4 +1,5 @@
 /* ------------------VARIABLES--------------------*/
+/* ------------------ CAROUSEL --------------------*/
 /* ------------------PALLETE--------------------*/
 /* -------FONT-----------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
@@ -18,6 +19,7 @@ body {
 }
 
 /* ------------------VARIABLES--------------------*/
+/* ------------------ CAROUSEL --------------------*/
 /* ------------------PALLETE--------------------*/
 /* ====================================================================================================================
  * RESPONSIVE
@@ -61,6 +63,55 @@ body {
     display: none;
   }
 }
+/* ====================================================================================================================
+ *  CSS CAROUSEL JQUERY
+ * ====================================================================================================================*/
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 90vw;
+  min-height: 40vh;
+}
+
+.card-slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 3px 9px 1px #747474;
+}
+.card-slider:hover .card {
+  opacity: 0.3;
+}
+.card-slider:hover .card:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.card {
+  position: relative;
+  margin: 0.6rem 0.9rem;
+  display: inline-block;
+  cursor: grab;
+  transition: 450ms all;
+  border-radius: 0.5rem;
+  transform-origin: center center;
+  box-shadow: 1px 3px 9px 1px #747474;
+}
+.card:hover .card {
+  transform: translate3d(100px, 0, 0);
+}
+.card img {
+  object-fit: cover;
+}
+.card__titles {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.6rem 0;
+}
+.card__titles:hover {
+  opacity: 1;
+}
+
 /* --------------------HEADER------------------------- */
 .header {
   display: flex;
@@ -151,72 +202,12 @@ body {
   font-size: 1.3rem;
 }
 .main__carousel {
-  /* -------------------- CAROUSEL ---------------- */
   padding: 1rem;
   width: auto;
-  overflow: inherit;
   position: relative;
 }
 .main__carousel--subtitles {
   padding: 3rem;
-  font-weight: 600;
-  color: #264653;
-}
-.main__carousel__cards {
-  width: 65rem;
-  display: flex;
-  justify-content: center;
-  box-shadow: 1px 3px 9px 1px #747474;
-  padding: 1rem 0;
-}
-.main__carousel__cards:hover .main__carousel__cards__item {
-  opacity: 0.3;
-}
-.main__carousel__cards:hover .main__carousel__cards__item:hover {
-  transform: scale(1.5);
-  opacity: 1;
-}
-.main__carousel__cards__btn {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-}
-.main__carousel__cards__btn--arrow {
-  width: 4rem;
-  align-self: center;
-  cursor: pointer;
-}
-.main__carousel__cards__btn--arrow i {
-  font-size: 2rem;
-  color: #264653;
-  border: 1px solid #e9c46a;
-}
-.main__carousel__cards__item {
-  position: relative;
-  margin: 0 0.5rem;
-  overflow: hidden;
-  display: inline-block;
-  cursor: pointer;
-  transition: 450ms all;
-  transform-origin: center center;
-  box-shadow: 1px 3px 9px 1px #747474;
-}
-.main__carousel__cards__item:hover .main__carousel__cards__item__item {
-  transform: translate3d(100px, 0, 0);
-}
-.main__carousel__cards__item img {
-  width: 10rem;
-  object-fit: cover;
-}
-.main__carousel__cards__item--titles {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0.6rem 0;
-}
-.main__carousel__cards__item--titles:hover {
-  opacity: 1;
 }
 .main__bottom {
   margin: 3rem;
