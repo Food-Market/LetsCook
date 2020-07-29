@@ -83,18 +83,18 @@ body {
   align-items: center;
 }
 .card-slider:hover .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   opacity: 1;
   box-shadow: 1px 1px 15px 2px #2a9d8f;
 }
 
 .card {
-  margin: 0.6rem 0.9rem;
+  margin: 3rem 1rem;
   display: inline-block;
   cursor: grab;
   transition: 450ms all;
   border-radius: 0.5rem;
-  transform-origin: center left;
+  transform-origin: center center;
   box-shadow: 1px 3px 9px 1px #747474;
 }
 .card:hover .card {
