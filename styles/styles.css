@@ -801,16 +801,17 @@ main .main-rate {
 }
 
 .main-rate h1 {
+  margin-top: 0;
   width: 100%;
   text-align: center;
   color: #264653;
   font-size: 30px;
+  text-align: center;
 }
 
 .main-rate .main-rate__icons {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,9 +825,43 @@ main .main-rate {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  margin-right: 20px;
+  margin-right: 5px;
   width: 30px;
   height: 30px;
   cursor: pointer;
+}
+
+main .main-addTo {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-addTo button {
+  width: 60%;
+  height: 50px;
+  margin: 0 auto;
+  border: transparent;
+  outline: none;
+  border-radius: 15px;
+  background-color: #e9c46a;
+  color: #264653;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.main-addTo button:hover {
+  background-color: #2a9d8f;
+  color: #dbe4ee;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=styles.css.map */
