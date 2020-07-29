@@ -5,10 +5,8 @@ $(document).ready( function(){
         slidesToShow:5,
         slidesToScroll:1,
         autoplay: true,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         dots: false,
-        focusOnSelect: true,
-        edgeFriction: 4,
         responsive:[
             {
                 breakpoint: 800,

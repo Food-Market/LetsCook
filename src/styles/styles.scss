@@ -98,9 +98,13 @@
     &__carousel {
         padding: 1rem;
         width: auto;
+        height: auto;
         position: relative;
         &--subtitles {
-            padding: 3rem;
+            padding: 1rem;
+            color: $color-main;
+            font-size: 1.8rem;
+            font-weight: 700;
         }
     }
     &__bottom {
