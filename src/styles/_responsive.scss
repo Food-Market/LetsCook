@@ -54,17 +54,19 @@
 
 }
 
-/*------------- SMART-PHONES-------------------*/
+/*------------- SMART-PHONES  414px-------------------*/
 
-
-@media screen and (max-width:375px) {
+@media screen and (max-width:414px) {
 
     body {
-        max-width: 375px;
+        width: 414px;
         font-size: 12px;
     }
 
     .header {
+        &__img {
+            margin-left: 3rem;
+        }
         &__menu {
             padding: 1rem !important;
             &__user {
@@ -84,12 +86,13 @@
 
     .main__title {
         h1 {
-            font-size: 2rem !important;
+            font-size: 2.6rem !important;
         }
     }
 
     .main__bottom {
-        margin: 2rem !important;
+        text-align: center;
+        margin: 0 2.5rem 2.5rem 2.5rem !important;
     }
 
     .card-slider {
@@ -101,13 +104,13 @@
     }
 
     .card img {
-        width: 18rem !important;
-        height: 18rem !important;
+        width: 21rem !important;
+        height: 21rem !important;
     }
 
     .card__titles {
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
     }
 
@@ -124,7 +127,92 @@
     }
 
     .header__menu__hambur.show.show.show {
+        transform: translateX(-190px);
+    }
+
+}
+
+
+
+
+
+/*------------- SMART-PHONES  375px-------------------*/
+
+@media screen and (max-width:375px) {
+
+    body {
+        max-width: 375px;
+        font-size: 12px;
+    }
+
+    .header {
+        &__img {
+            margin-left: 3rem;
+        }
+        &__menu {
+            padding: 1rem !important;
+            &__user {
+                input {
+                    display: none;
+                }
+                &--lens {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .header__menu__hambur__menu {
+        font-size: 1.2rem;
+    }
+
+    .main__title {
+        h1 {
+            font-size: 2.5rem !important;
+        }
+    }
+
+
+    .card-slider {
+        width: 98% !important;
+    }
+
+    .card {
+        margin: 2rem 1rem;
+    }
+
+    .card img {
+        width: 18.5rem !important;
+        height: 18.5rem !important;
+    }
+
+    .card__titles {
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .main__bottom {
+        text-align: center;
+        margin: 0 2rem 2rem 2rem !important;
+    }
+
+
+    .footer {
+        align-items: center;
+        &__menu--links a {
+            margin-right: 2rem !important;
+        }
+        &__social--icons {
+            span {
+                font-size: 1rem !important;
+            }
+        }
+    }
+
+    .header__menu__hambur.show.show.show {
         transform: translateX(-150px);
     }
+
 }
 
