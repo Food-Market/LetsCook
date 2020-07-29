@@ -54,6 +54,8 @@ sans-serif;
     background-repeat: no-repeat;
     align-self: center;
     justify-self: center;
+    grid-row: 1/3;
+    grid-column: 1/2;
 }
 
 @mixin ingredientNameStyle {
@@ -69,6 +71,29 @@ sans-serif;
     width: 100%;
     height: 100%;
     margin: 0;
+    font-family: $textFont;
+    font-size: 15px;
+    color: $color-main;
+}
+
+@mixin stepStyle {
+    width: 100%;
+    height: 100%;
+    background-color: $color-backgroud;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+@mixin stepStyleParagraph {
+    width: auto;
+    height: 100%;
+    margin-right: 5px;
+    text-align: justify;
+    margin-left: 5px;
     font-family: $textFont;
     font-size: 15px;
     color: $color-main;
@@ -291,8 +316,6 @@ main .main-ingredients {
 .main-ingredients__container1 .main-ingredients__image {
     background-image: url(https://i.imgur.com/FaeMCS1.jpg);
     @include ingredientsReciepeImagesStyle;
-    grid-row: 1/3;
-    grid-column: 1/2;
 }
 
 .main-ingredients__container1 .main-ingredientes__name {
@@ -314,8 +337,6 @@ main .main-ingredients {
 .main-ingredients__container2 .main-ingredients__image {
     background-image: url(https://i.imgur.com/pWBcZYu.jpg);
     @include ingredientsReciepeImagesStyle;
-    grid-row: 1/3;
-    grid-column: 1/2;
 }
 
 .main-ingredients__container2 .main-ingredientes__name {
@@ -337,8 +358,6 @@ main .main-ingredients {
 .main-ingredients__container3 .main-ingredients__image {
     background-image: url(https://i.imgur.com/Nie87y0.jpg);
     @include ingredientsReciepeImagesStyle;
-    grid-row: 1/3;
-    grid-column: 1/2;
 }
 
 .main-ingredients__container3 .main-ingredientes__name {
@@ -360,8 +379,6 @@ main .main-ingredients {
 .main-ingredients__container4 .main-ingredients__image {
     background-image: url(https://i.imgur.com/oshniVt.jpg);
     @include ingredientsReciepeImagesStyle;
-    grid-row: 1/3;
-    grid-column: 1/2;
 }
 
 .main-ingredients__container4 .main-ingredientes__name {
@@ -383,8 +400,6 @@ main .main-ingredients {
 .main-ingredients__container5 .main-ingredients__image {
     background-image: url(https://i.imgur.com/QVQg69D.jpg);
     @include ingredientsReciepeImagesStyle;
-    grid-row: 1/3;
-    grid-column: 1/2;
 }
 
 .main-ingredients__container5 .main-ingredientes__name {
@@ -406,8 +421,6 @@ main .main-ingredients {
 .main-ingredients__container6 .main-ingredients__image {
     background-image: url(https://i.imgur.com/eq2wjLQ.jpg);
     @include ingredientsReciepeImagesStyle;
-    grid-row: 1/3;
-    grid-column: 1/2;
 }
 
 .main-ingredients__container6 .main-ingredientes__name {
@@ -429,8 +442,6 @@ main .main-ingredients {
 .main-ingredients__container7 .main-ingredients__image {
     background-image: url(https://i.imgur.com/PCue0dC.jpg);
     @include ingredientsReciepeImagesStyle;
-    grid-row: 1/3;
-    grid-column: 1/2;
 }
 
 .main-ingredients__container7 .main-ingredientes__name {
@@ -441,6 +452,58 @@ main .main-ingredients {
 
 .main-ingredients__container7 .main-ingredients__quantity {
     @include ingredientQuantityStyle;
-    grid-row: 2/3;
-    grid-column: 2/3;
+}
+
+main .main-steps {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+}
+
+.main-steps h1 {
+    width: 100%;
+    @include titleStyle;
+}
+
+.main-steps .main-steps__container {
+    @include stepStyle;
+}
+
+.main-steps__container p {
+    @include stepStyleParagraph;
+}
+
+main .main-rate {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-rate h1 {
+    width: 100%;
+    @include titleStyle;
+}
+
+.main-rate .main-rate__icons {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main-rate__icons a {
+    background-image: url(/assets/like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
