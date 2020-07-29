@@ -21,12 +21,6 @@ $(document).ready( function(){
                 slidesToShow: 1,
                 }
             },
-            {
-                breakpoint: 375,
-                settings: {
-                slidesToShow: 1,
-                }
-            }
         ]
     });
 });

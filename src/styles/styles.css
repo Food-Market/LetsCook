@@ -22,12 +22,24 @@ body {
 /* ------------------ CAROUSEL --------------------*/
 /* ------------------PALLETE--------------------*/
 /* ====================================================================================================================
+ *  MIXINS  SASS
+ * ====================================================================================================================*/
+/* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
 /*-------------Tablet-------------------*/
 @media screen and (max-width: 768px) {
   body {
+    width: 768px;
     font-size: 13px;
+  }
+
+  .main__carousel--subtitles {
+    text-align: center;
+  }
+
+  .header__img--logo {
+    width: 13rem !important;
   }
 
   .header__menu--links {
@@ -40,6 +52,15 @@ body {
     padding: 1rem;
   }
 
+  .header__menu__hambur__menu {
+    font-size: 1.1rem;
+  }
+
+  .card img {
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+
   .fa-user {
     display: none;
   }
@@ -48,13 +69,15 @@ body {
     display: inline !important;
   }
 }
+/*------------- SMART-PHONES-------------------*/
 @media screen and (max-width: 375px) {
   body {
-    font-size: 10px;
+    max-width: 375px;
+    font-size: 12px;
   }
 
   .header__menu {
-    padding-right: 0;
+    padding: 1rem !important;
   }
   .header__menu__user input {
     display: none;
@@ -62,10 +85,56 @@ body {
   .header__menu__user--lens {
     display: none;
   }
+
+  .header__menu__hambur__menu {
+    font-size: 1.2rem;
+  }
+
+  .main__title h1 {
+    font-size: 2rem !important;
+  }
+
+  .main__bottom {
+    margin: 2rem !important;
+  }
+
+  .card-slider {
+    width: 98% !important;
+  }
+
+  .card {
+    margin: 2rem 1rem;
+  }
+
+  .card img {
+    width: 18rem !important;
+    height: 18rem !important;
+  }
+
+  .card__titles h3 {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    align-items: center;
+  }
+  .footer__menu--links a {
+    margin-right: 2rem !important;
+  }
+  .footer__social--icons span {
+    font-size: 1rem !important;
+  }
+
+  .header__menu__hambur.show.show.show {
+    transform: translateX(-150px);
+  }
 }
 /* ------------------VARIABLES--------------------*/
 /* ------------------ CAROUSEL --------------------*/
 /* ------------------PALLETE--------------------*/
+/* ====================================================================================================================
+ *  MIXINS  SASS
+ * ====================================================================================================================*/
 /* ====================================================================================================================
  *  CSS CAROUSEL JQUERY
  * ====================================================================================================================*/
@@ -101,6 +170,8 @@ body {
   transform: translate3d(100px, 0, 0);
 }
 .card img {
+  width: 13rem;
+  height: 13rem;
   object-fit: cover;
 }
 .card__titles {
@@ -114,8 +185,22 @@ body {
   width: auto;
   font-size: auto;
 }
+.card__titles .fa-shopping-basket {
+  font-size: 1.2rem;
+}
+.card__titles .fa-shopping-basket:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+  font-size: 1.3rem;
+}
 
-/* --------------------HEADER------------------------- */
+/* ====================================================================================================================
+ *  MIXINS  SASS
+ * ====================================================================================================================*/
+/* ====================================================================================================================
+ *                          HEADER
+ * ====================================================================================================================*/
 .header {
   display: flex;
   justify-content: space-evenly;
@@ -175,13 +260,88 @@ body {
   cursor: pointer;
 }
 .header__menu__user--icons i:hover {
+  transition: transform 0.2s ease-in-out;
   transform: scale(1.2);
+  color: #e9c46a;
 }
 .header__menu__user .fa-bars {
   display: none;
 }
+.header__menu__hambur {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  transform: translateX(-1400px);
+  transition: transform 0.5s ease-in-out;
+  background-color: #dbe4ee;
+  opacity: 0.9;
+  box-shadow: 1px 3px 6px 1px #747474;
+}
+.header__menu__hambur__top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7rem;
+}
+.header__menu__hambur__top img {
+  width: 6rem;
+}
+.header__menu__hambur__top .fa-times {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.header__menu__hambur--search {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.header__menu__hambur--search input {
+  width: 10rem;
+  height: 33px;
+  padding: 0 5px;
+  margin: 0 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+.header__menu__hambur--search-lens {
+  position: relative;
+  right: 35px;
+  top: 10px;
+  opacity: 0.4;
+}
+.header__menu__hambur__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 1rem 1.5rem;
+}
+.header__menu__hambur__menu a {
+  margin-bottom: 0.9rem;
+  text-decoration: none;
+  color: #264653;
+  font-weight: bold;
+}
+.header__menu__hambur__menu a:hover {
+  border-bottom: 3px solid #e9c46a;
+  color: #2a9d8f;
+}
 
-/* -------------------- MAIN ------------------------- */
+.show {
+  transform: translateX(-550px);
+}
+
+.fa-times:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+}
+
+/* ====================================================================================================================
+ *                          MAIN
+ * ====================================================================================================================*/
 .main {
   display: flex;
   flex-direction: column;
@@ -234,7 +394,9 @@ body {
   transform: scale(1.5);
 }
 
-/* -------------------- FOOTER ------------------------- */
+/* ====================================================================================================================
+ *                          FOOTER
+ * ====================================================================================================================*/
 .footer {
   height: auto;
   display: flex;
@@ -277,10 +439,20 @@ body {
   margin-right: 0.7rem;
   cursor: pointer;
 }
+.footer__social--icons .fa-facebook:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+}
 .footer__social--icons .fa-instagram {
   color: #dbe4ee;
   font-size: 2rem;
   cursor: pointer;
+}
+.footer__social--icons .fa-instagram:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
 }
 .footer__bottom {
   align-self: center;

@@ -3,9 +3,12 @@
 @import 'variables';
 @import 'responsive';
 @import 'carousel';
+@import 'mixins';
 
 
-/* --------------------HEADER------------------------- */
+/* ====================================================================================================================
+ *                          HEADER
+ * ====================================================================================================================*/
 
 .header {
     display: flex;
@@ -62,17 +65,88 @@
                 transition: all .2s ease-out;
                 cursor: pointer;
                 &:hover {
-                    transform: scale(1.2);
+                    @include hover-icons
                 }
             }
             .fa-bars {
                 display: none;
             }
         }
+        &__hambur {
+            position: absolute;
+            right: 0;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            max-height: 100vh;
+            transform: translateX(-1400px);
+            transition: transform .5s ease-in-out;
+            background-color: $color-light;
+            opacity: .9;
+            box-shadow: 1px 3px 6px 1px rgb(116, 116, 116);
+            &__top {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: .7rem;
+                img {
+                    width: 6rem;
+                }
+                .fa-times {
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                }
+            }
+            &--search {
+                display: flex;
+                justify-content: center;
+                margin: 1rem 0;
+                input {
+                    width: 10rem;
+                    height: 33px;
+                    padding: 0 5px;
+                    margin: 0 1rem;
+                    border-radius: 8px;
+                    font-size: .8rem;
+                }
+                &-lens {
+                    position: relative;
+                    right: 35px;
+                    top: 10px;
+                    opacity: .4;
+                }
+            }
+            &__menu {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                padding: 1rem 1.5rem;
+                a {
+                    margin-bottom: .9rem;
+                    text-decoration: none;
+                    color: $color-main;
+                    font-weight: bold;
+                    &:hover {
+                        border-bottom: 3px solid $color-btn;
+                        color: $color-hover;
+                    }
+                }
+            }
+        }
     }
 }
 
-/* -------------------- MAIN ------------------------- */
+.show {
+    transform: translateX(-550px);
+}
+
+.fa-times:hover {
+    @include hover-icons;
+}
+
+/* ====================================================================================================================
+ *                          MAIN
+ * ====================================================================================================================*/
 
 .main {
     display: flex;
@@ -128,7 +202,9 @@
 
 
 
-/* -------------------- FOOTER ------------------------- */
+/* ====================================================================================================================
+ *                          FOOTER
+ * ====================================================================================================================*/
 
 .footer {
     height: auto;
@@ -170,11 +246,17 @@
                 font-size: 2rem;
                 margin-right: .7rem;
                 cursor: pointer;
+                &:hover {
+                    @include hover-icons
+                }
             }
             .fa-instagram {
                 color: $color-light;
                 font-size: 2rem;
                 cursor: pointer;
+                &:hover {
+                    @include hover-icons
+                }
             }
         }
     }
