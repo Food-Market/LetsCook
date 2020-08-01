@@ -56,7 +56,7 @@ body {
     font-size: 1.1rem;
   }
 
-  .card img {
+  .main__carousel__cards__item img {
     width: 12rem !important;
     height: 12rem !important;
   }
@@ -102,20 +102,17 @@ body {
     margin: 0 2.5rem 2.5rem 2.5rem !important;
   }
 
-  .card-slider {
+  .main__carousel__cards {
     width: 98% !important;
   }
-
-  .card {
+  .main__carousel__cards__item {
     margin: 2rem 1rem;
   }
-
-  .card img {
+  .main__carousel__cardsimg {
     width: 21rem !important;
     height: 21rem !important;
   }
-
-  .card__titles h3 {
+  .main__carousel__cards--titles h3 {
     font-size: 1.6rem;
   }
 
@@ -161,20 +158,17 @@ body {
     font-size: 2.5rem !important;
   }
 
-  .card-slider {
+  .main__carousel__cards {
     width: 98% !important;
   }
-
-  .card {
+  .main__carousel__cards__item {
     margin: 2rem 1rem;
   }
-
-  .card img {
+  .main__carousel__cardsimg {
     width: 18.5rem !important;
     height: 18.5rem !important;
   }
-
-  .card__titles h3 {
+  .main__carousel__cards--titles h3 {
     font-size: 1.5rem;
   }
 
@@ -206,26 +200,25 @@ body {
 /* ====================================================================================================================
  *  CSS CAROUSEL JQUERY
  * ====================================================================================================================*/
-.container {
+.main__carousel {
   display: flex;
+  flex-direction: column;
   align-items: center;
   max-width: 90vw;
   min-height: 30vh;
 }
-
-.card-slider {
+.main__carousel__cards {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card-slider:hover .card:hover {
+.main__carousel__cards:hover .main__carousel__cards__cards:hover {
   transform: scale(1.2);
   opacity: 1;
   box-shadow: 1px 1px 15px 2px #2a9d8f;
 }
-
-.card {
+.main__carousel__item {
   margin: 3rem 1rem;
   display: inline-block;
   cursor: grab;
@@ -234,29 +227,29 @@ body {
   transform-origin: center center;
   box-shadow: 1px 3px 9px 1px #747474;
 }
-.card:hover .card {
+.main__carousel__item:hover .main__carousel__item__item {
   transform: translate3d(100px, 0, 0);
 }
-.card img {
+.main__carousel__itemimg {
   width: 13rem;
   height: 13rem;
   object-fit: cover;
 }
-.card__titles {
+.main__carousel__item--titles {
   height: 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0.4rem 0;
 }
-.card__titles--title {
+.main__carousel__item--titlesh3 {
   width: auto;
   font-size: auto;
 }
-.card__titles .fa-shopping-basket {
+.main__carousel__item--titles .fa-shopping-basket {
   font-size: 1.3rem;
 }
-.card__titles .fa-shopping-basket:hover {
+.main__carousel__item--titles .fa-shopping-basket:hover {
   transition: transform 0.2s ease-in-out;
   transform: scale(1.2);
   color: #e9c46a;
@@ -442,7 +435,7 @@ body {
 .main__carousel {
   padding: 1rem;
   width: auto;
-  height: auto;
+  overflow: inherit;
   position: relative;
 }
 .main__carousel--subtitles {
@@ -450,6 +443,59 @@ body {
   color: #264653;
   font-size: 1.8rem;
   font-weight: 700;
+}
+.main__carousel__cards {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 3px 9px 1px #747474;
+  padding: 1rem 0;
+}
+.main__carousel__cards:hover .main__carousel__cards__item {
+  opacity: 0.3;
+}
+.main__carousel__cards:hover .main__carousel__cards__item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+.main__carousel__cards--arrow {
+  padding: 1rem;
+  align-self: center;
+}
+.main__carousel__cards__item {
+  position: relative;
+  margin: 0 0.5rem;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center center;
+  box-shadow: 1px 3px 9px 1px #747474;
+}
+.main__carousel__cards__item:hover .main__carousel__cards__item__item {
+  transform: translate3d(100px, 0, 0);
+}
+.main__carousel__cards__item img {
+  width: 10rem;
+  object-fit: cover;
+}
+.main__carousel__cards__item--titles {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.6rem 0;
+}
+.main__carousel__cards__item--titles:hover {
+  opacity: 1;
+}
+.main__carousel__cards__item .fa-shopping-basket {
+  font-size: 1.3rem;
+}
+.main__carousel__cards__item .fa-shopping-basket:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 .main__bottom {
   margin: 3rem;
@@ -469,9 +515,7 @@ body {
   transform: scale(1.5);
 }
 
-/* ====================================================================================================================
- *                          FOOTER
- * ====================================================================================================================*/
+/* -------------------- FOOTER ------------------------- */
 .footer {
   height: auto;
   display: flex;

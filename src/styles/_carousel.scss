@@ -8,61 +8,62 @@
  * ====================================================================================================================*/
 
 
-.container {
+.main__carousel {
     display: flex;
+    flex-direction: column;
     align-items: center;
     max-width: 90vw;
     min-height: 30vh;
-}
-
-.card-slider {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // &:hover .card {
-    //     opacity: 0.3;
-    // }
-    &:hover .card:hover {
-        transform: scale(1.2);
-        opacity: 1;
-        box-shadow: 1px 1px 15px 2px $color-hover;
-    }
-}
-
-.card {
-    margin: 3rem 1rem;
-    display: inline-block;
-    cursor: grab;
-    transition: 450ms all;
-    border-radius: $card__border-radius;
-    transform-origin: center center;
-    box-shadow: 1px 3px 9px 1px rgb(116, 116, 116);
-    &:hover .card {
-        transform: translate3d(100px, 0, 0);
-    }
-    img {
-        width: 13rem;
-        height: 13rem;
-        object-fit: cover;
-    }
-    &__titles {
-        height: 3rem;
+    &__cards {
+        width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        padding: .4rem 0;
-            &--title {
-                width: auto;
-                font-size: auto;
-            }
-            .fa-shopping-basket {
-                font-size: 1.3rem;
-                &:hover {
-                    @include hover-icons;
-                    font-size: 1.3rem;
-                    cursor: pointer;
+        // &:hover &__cards {
+        //     opacity: 0.3;
+        // }
+        &:hover &__cards:hover {
+            transform: scale(1.2);
+            opacity: 1;
+            box-shadow: 1px 1px 15px 2px $color-hover;
+        }
+    }
+    &__item {
+        margin: 3rem 1rem;
+        display: inline-block;
+        cursor: grab;
+        transition: 450ms all;
+        border-radius: $card__border-radius;
+        transform-origin: center center;
+        box-shadow: 1px 3px 9px 1px rgb(116, 116, 116);
+        &:hover  &__item {
+            transform: translate3d(100px, 0, 0);
+        }
+        &img {
+            width: 13rem;
+            height: 13rem;
+            object-fit: cover;
+        }
+        &--titles {
+            height: 3rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: .4rem 0;
+                &h3 {
+                    width: auto;
+                    font-size: auto;
                 }
-            }
+                .fa-shopping-basket {
+                    font-size: 1.3rem;
+                    &:hover {
+                        @include hover-icons;
+                        font-size: 1.3rem;
+                        cursor: pointer;
+                    }
+                }
+        }
     }
 }
+
+
