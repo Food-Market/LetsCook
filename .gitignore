@@ -1,2 +1,2 @@
-*.config
-*.less
+prepros.config
+node_modules
