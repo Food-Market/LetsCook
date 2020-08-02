@@ -2,7 +2,6 @@
 @import 'globals';
 @import 'variables';
 @import 'responsive';
-@import 'carousel';
 @import 'mixins';
 
 
@@ -38,6 +37,7 @@
         &--links a {
             margin-right: 2rem;
             text-decoration: none;
+            font-size: 1.4rem;
             font-weight: 700;
             color: $color-btn;
             &:hover {
@@ -50,8 +50,9 @@
             align-items: center;
             margin-left: 2rem;
             input {
+                width: 220px;
                 height: 33px;
-                padding: 0 5px;
+                padding: 0 35px 0 10px;
                 margin: 0 1rem;
                 border-radius: 13px;
             }
@@ -80,7 +81,7 @@
         }
         &__hambur {
             position: absolute;
-            right: 0;
+            right: 525px;
             z-index: 5;
             display: flex;
             flex-direction: column;
@@ -139,11 +140,12 @@
                 }
             }
         }
+
     }
 }
 
 .show {
-    transform: translateX(-550px);
+    transform: translateX(-40px);
 }
 
 .fa-times:hover {
@@ -176,15 +178,79 @@
         }
     }
     &__carousel {
+        max-width: 100vw;
+        min-height: 40vh;
         padding: 1rem;
-        width: auto;
-        height: auto;
-        position: relative;
         &--subtitles {
-            padding: 1rem;
+            padding: 1.5rem;
             color: $color-main;
             font-size: 1.8rem;
             font-weight: 700;
+        }
+        &__cards {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template: 1fr / repeat(6, 1fr);
+            padding: 1rem 0;
+            &:hover &__item {
+                opacity: 0.3;
+            }
+            &:hover &__item:hover {
+                transform: scale(1.2);
+                opacity: 1;
+                box-shadow: 1px 1px 15px 2px $color-hover;
+            }
+            &--arrow {
+                padding: 1rem;
+                align-self: center;
+            }
+            &__item {
+                position: relative;
+                margin: 0 .5rem;
+                width: 90%;
+                height: 90%;
+                margin: 2rem 1rem;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: $card__border-radius;
+                transition: 450ms all;
+                transform-origin: center center;
+                box-shadow: 1px 3px 9px 1px rgb(116, 116, 116);
+                &:hover &__item {
+                    transform: translate3d(100px, 0, 0);
+                }
+                &--img {
+                    width: 100%;
+                    height: 80%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-top-right-radius: $card__border-radius;
+                        border-top-left-radius: $card__border-radius;
+                    }
+                }
+                &--titles {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding: 1rem 0;
+                    font-size: 1.2rem;
+                    color: $color-main;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                .fa-shopping-basket {
+                    font-size: 1.5rem;
+                    &:hover {
+                        @include hover-icons;
+                        font-size: 1.7rem;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
     &__bottom {
@@ -206,11 +272,7 @@
     }
 }
 
-
-
-/* ====================================================================================================================
- *                          FOOTER
- * ====================================================================================================================*/
+/* -------------------- FOOTER ------------------------- */
 
 .footer {
     height: auto;
