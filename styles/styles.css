@@ -923,7 +923,6 @@ main .main-addTo {
   main {
     width: 100%;
     margin: 0 auto;
-    border: 1px solid red;
   }
   main .main-image {
     width: 100%;
@@ -969,6 +968,23 @@ main .main-addTo {
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
     grid-column: 1/5;
+  }
+  main .main-ingredients {
+    width: 95%;
+  }
+  main .main-steps {
+    width: 95%;
+    margin-top: 10px;
+  }
+  main .main-addTo {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 10%;
+  }
+  .main-addTo button {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

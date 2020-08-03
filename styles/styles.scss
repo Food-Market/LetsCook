@@ -584,7 +584,6 @@ main .main-addTo {
     main {
         width: 100%;
         margin: 0 auto;
-        border: $debug-border;
     }
     main .main-image {
         width: 100%;
@@ -615,5 +614,22 @@ main .main-addTo {
         color: $color-main;
         grid-row: 4/5;
         grid-column: 1/5;
+    }
+    main .main-ingredients {
+        width: 95%;
+    }
+    main .main-steps {
+        width: 95%;
+        margin-top: 10px;
+    }
+    main .main-addTo {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 10%;
+    }
+    .main-addTo button {
+        width: 80%;
     }
 }
