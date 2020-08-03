@@ -566,8 +566,6 @@ main .main-addTo {
     .header-container__explore,
     .header-container__faq,
     .header-container__userName {
-        /*  @include liTextStyle;
-    grid-column: 2/3; */
         display: none;
     }
     .header-container .header-container__icon {
@@ -592,5 +590,30 @@ main .main-addTo {
         width: 100%;
         height: 50%;
         margin-top: 10px;
+    }
+    main .main-introduction {
+        width: 100%;
+        margin-top: 20px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 16.25% 16.25% 16.25% 35% 16.25%;
+        grid-template-columns: repeat(4, 25%);
+    }
+    .main-introduction h2 {
+        width: 100%;
+        @include subtitleStyle;
+        grid-row: 2/3;
+        grid-column: 1/5;
+        align-self: center;
+    }
+    .main-introduction p {
+        width: 96%;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: justify;
+        color: $color-main;
+        grid-row: 4/5;
+        grid-column: 1/5;
     }
 }
