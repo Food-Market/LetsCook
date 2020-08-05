@@ -1,2 +1,4 @@
+*.config
+*.less
 *.scss
 *.css.map
