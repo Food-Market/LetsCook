@@ -1,5 +1,6 @@
 @import 'mixins';
 
+
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
@@ -10,12 +11,8 @@
 @media screen and (max-width:768px) {
 
     body {
-        width: 768px;
+        width: 100vw;
         font-size: 13px;
-    }
-
-    .main__carousel--subtitles {
-        text-align: center;
     }
 
 
@@ -33,16 +30,24 @@
                 padding: 1rem;
             }
         }
+        &__hambur__menu {
+            font-size: 1.1rem;
+        }
     }
 
-    .header__menu__hambur__menu {
-        font-size: 1.1rem;
+    .main__carousel {
+        &--subtitles {
+            text-align: center;
+        }
+        &__cards {
+            grid-template: 1fr 1fr / 1fr 1fr 1fr !important;
+            &__item {
+                width: 85% !important;
+                height: 85% !important;
+            }
+        }
     }
 
-    .card img {
-        width: 12rem !important;
-        height: 12rem !important;
-    }
 
     .fa-user {
         display: none;
@@ -52,6 +57,7 @@
         display: inline !important;
     }
 
+
 }
 
 /*------------- SMART-PHONES  414px-------------------*/
@@ -59,8 +65,12 @@
 @media screen and (max-width:414px) {
 
     body {
-        width: 414px;
-        font-size: 12px;
+        width: 100vw;
+        font-size: 14px;
+    }
+
+    .show {
+        transform: translateX(310px) !important;
     }
 
     .header {
@@ -95,22 +105,23 @@
         margin: 0 2.5rem 2.5rem 2.5rem !important;
     }
 
-    .card-slider {
-        width: 98% !important;
-    }
-
-    .card {
-        margin: 2rem 1rem;
-    }
-
-    .card img {
-        width: 21rem !important;
-        height: 21rem !important;
-    }
-
-    .card__titles {
-        h3 {
-            font-size: 1.6rem;
+    .main__carousel {
+        width: 100% !important;
+        &__cards {
+            grid-template: repeat(6, 1fr) / 1fr !important;
+            justify-items: center;
+            &:hover &__item:hover {
+                transform: scale(1.1) !important;
+            }
+            &__item {
+                margin: 0;
+                &--img {
+                    height: 85% !important;
+                }
+            }
+        }
+        &--titles {
+            font-size: 1.6rem !important;
         }
     }
 
@@ -129,20 +140,15 @@
     .header__menu__hambur.show.show.show {
         transform: translateX(-190px);
     }
-
 }
-
-
-
 
 
 /*------------- SMART-PHONES  375px-------------------*/
 
 @media screen and (max-width:375px) {
 
-    body {
-        max-width: 375px;
-        font-size: 12px;
+    .show {
+        transform: translateX(355px) !important;
     }
 
     .header {
@@ -173,24 +179,21 @@
     }
 
 
-    .card-slider {
-        width: 98% !important;
-    }
-
-    .card {
-        margin: 2rem 1rem;
-    }
-
-    .card img {
-        width: 18.5rem !important;
-        height: 18.5rem !important;
-    }
-
-    .card__titles {
-        h3 {
-            font-size: 1.5rem;
+    .main__carousel__cards {
+        &__item {
+            margin: 2rem 1rem;
+        }
+        &img {
+            width: 18.5rem !important;
+            height: 18.5rem !important;
+        }
+        &--titles {
+            h3 {
+                font-size: 1.5rem;
+            }
         }
     }
+
 
     .main__bottom {
         text-align: center;
