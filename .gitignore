@@ -1,2 +1,5 @@
 *.config
 *.less
+*.less
+*.scss
+*.css.map
