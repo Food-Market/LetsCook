@@ -23,7 +23,10 @@
   },
   "homepage": "https://github.com/Food-Market/LetsCook#readme",
   "devDependencies": {
+    "node-sass": "4.14.1",
+    "sass-loader": "9.0.3",
     "webpack": "4.44.1",
     "webpack-cli": "3.3.12"
-  }
+  },
+  "dependencies": {}
 }
