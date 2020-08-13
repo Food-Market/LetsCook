@@ -1,20 +1,16 @@
-@import 'mixins';
-
+@import "mixins";
 
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
 
-
 /*-------------Tablet-------------------*/
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
     body {
         width: 100vw;
         font-size: 13px;
     }
-
 
     .header__img--logo {
         width: 13rem !important;
@@ -48,7 +44,6 @@
         }
     }
 
-
     .fa-user {
         display: none;
     }
@@ -56,14 +51,11 @@
     .fa-bars {
         display: inline !important;
     }
-
-
 }
 
 /*------------- SMART-PHONES  414px-------------------*/
 
-@media screen and (max-width:414px) {
-
+@media screen and (max-width: 414px) {
     body {
         width: 100vw;
         font-size: 14px;
@@ -100,7 +92,7 @@
         }
     }
 
-    .main__bottom {
+    .main__bottom--center {
         text-align: center;
         margin: 0 2.5rem 2.5rem 2.5rem !important;
     }
@@ -142,11 +134,9 @@
     }
 }
 
-
 /*------------- SMART-PHONES  375px-------------------*/
 
-@media screen and (max-width:375px) {
-
+@media screen and (max-width: 375px) {
     .show {
         transform: translateX(355px) !important;
     }
@@ -178,7 +168,6 @@
         }
     }
 
-
     .main__carousel__cards {
         &__item {
             margin: 2rem 1rem;
@@ -194,12 +183,11 @@
         }
     }
 
-
-    .main__bottom {
+    .main__bottom--center {
         text-align: center;
         margin: 0 2rem 2rem 2rem !important;
+        font-size: 0.8rem;
     }
-
 
     .footer {
         align-items: center;
@@ -216,6 +204,4 @@
     .header__menu__hambur.show.show.show {
         transform: translateX(-150px);
     }
-
 }
-
