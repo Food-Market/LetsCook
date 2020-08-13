@@ -1,9 +1,7 @@
-
-@import 'globals';
-@import 'variables';
-@import 'responsive';
-@import 'mixins';
-
+@import "globals";
+@import "variables";
+@import "responsive";
+@import "mixins";
 
 /* ====================================================================================================================
  *                          HEADER
@@ -59,7 +57,7 @@
             &--lens {
                 position: relative;
                 right: 50px;
-                opacity: .4;
+                opacity: 0.4;
             }
             &--icons {
                 display: flex;
@@ -69,10 +67,10 @@
                 margin: 0 1rem;
                 color: #ffffff;
                 font-size: 1.7rem;
-                transition: all .2s ease-out;
+                transition: all 0.2s ease-out;
                 cursor: pointer;
                 &:hover {
-                    @include hover-icons
+                    @include hover-icons;
                 }
             }
             .fa-bars {
@@ -87,15 +85,15 @@
             flex-direction: column;
             max-height: 100vh;
             transform: translateX(-1400px);
-            transition: transform .5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
             background-color: $color-light;
-            opacity: .9;
+            opacity: 0.9;
             box-shadow: 1px 3px 6px 1px rgb(116, 116, 116);
             &__top {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                padding: .7rem;
+                padding: 0.7rem;
                 img {
                     width: 6rem;
                 }
@@ -114,13 +112,13 @@
                     padding: 0 5px;
                     margin: 0 1rem;
                     border-radius: 8px;
-                    font-size: .8rem;
+                    font-size: 0.8rem;
                 }
                 &-lens {
                     position: relative;
                     right: 35px;
                     top: 10px;
-                    opacity: .4;
+                    opacity: 0.4;
                 }
             }
             &__menu {
@@ -129,10 +127,11 @@
                 align-items: left;
                 padding: 1rem 1.5rem;
                 a {
-                    margin-bottom: .9rem;
+                    margin-bottom: 0.9rem;
                     text-decoration: none;
                     color: $color-main;
                     font-weight: bold;
+                    transition: 450ms all;
                     &:hover {
                         border-bottom: 3px solid $color-btn;
                         color: $color-hover;
@@ -140,12 +139,12 @@
                 }
             }
         }
-
     }
 }
 
 .show {
     transform: translateX(-40px);
+    position: fixed;
 }
 
 .fa-times:hover {
@@ -187,6 +186,7 @@
             font-size: 1.8rem;
             font-weight: 700;
         }
+
         &__cards {
             width: 100%;
             height: auto;
@@ -207,7 +207,7 @@
             }
             &__item {
                 position: relative;
-                margin: 0 .5rem;
+                margin: 0 0.5rem;
                 width: 90%;
                 height: 90%;
                 margin: 2rem 1rem;
@@ -254,19 +254,27 @@
         }
     }
     &__bottom {
-        margin: 3rem;
-        padding: 1.5rem;
-        background-color: $color-btn;
-        border-radius: 5px;
-        a {
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: $color-main;
-            transition: 400ms all;
-            &:hover {
-                color: $color-hover;
-                transform: scale(1.5);
+        display: flex;
+        justify-content: center;
+        transition: 450ms ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &--center {
+            display: inherit;
+            margin: 3rem;
+            padding: 1.5rem;
+            background-color: $color-btn;
+            border-radius: 5px;
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: $color-main;
+                transition: 400ms all;
+                &:hover {
+                    color: $color-hover;
+                }
             }
         }
     }
@@ -307,15 +315,15 @@
                 color: $color-light;
                 font-size: 1.4rem;
                 font-weight: 700;
-                margin-right: .7rem;
+                margin-right: 0.7rem;
             }
             .fa-facebook {
                 color: $color-light;
                 font-size: 2rem;
-                margin-right: .7rem;
+                margin-right: 0.7rem;
                 cursor: pointer;
                 &:hover {
-                    @include hover-icons
+                    @include hover-icons;
                 }
             }
             .fa-instagram {
@@ -323,7 +331,7 @@
                 font-size: 2rem;
                 cursor: pointer;
                 &:hover {
-                    @include hover-icons
+                    @include hover-icons;
                 }
             }
         }
@@ -338,4 +346,3 @@
         }
     }
 }
-
