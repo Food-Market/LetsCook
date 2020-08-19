@@ -4,6 +4,7 @@
 /* -------FONT-----------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 /* -------GLOBALS-----------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -202,42 +203,189 @@ body {
 /* ====================================================================================================================
  *  MIXINS  SASS
  * ====================================================================================================================*/
+/* ------------------VARIABLES--------------------*/
+/* ------------------ CAROUSEL --------------------*/
+/* ------------------PALLETE--------------------*/
+/* ------------------VARIABLES--------------------*/
+/* ------------------ CAROUSEL --------------------*/
+/* ------------------PALLETE--------------------*/
+/* -------FONT-----------*/
+/* -------GLOBALS-----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #dbe4ee;
+}
+
+/* ====================================================================================================================
+ *  MIXINS  SASS
+ * ====================================================================================================================*/
+/*  VARIABLES SIGNUP     */
+/*******************************/
+.container {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   width: 100vw;
   height: 100vh;
 }
-body .right-image img {
+.container .right-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.main {
+.container .main {
   padding: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main__logo {
+.container .main__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.main__logo img {
-  width: 20rem;
+.container .main__logo img {
+  width: 18rem;
 }
-.main__social {
+.container .main__logo h1 {
+  color: #264653;
+  text-shadow: black;
+}
+.container .main__social {
   width: 100%;
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
-.main__social a {
+.container .main__social a {
   font-size: 2.5rem;
 }
+.container .main__social .fa-facebook {
+  color: #4267b2;
+}
+.container .main__social .fa-facebook:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+}
+.container .main__social .fa-twitter {
+  color: #1da1f2;
+}
+.container .main__social .fa-twitter:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+}
+.container .main__social .fa-google {
+  color: #ee4433;
+}
+.container .main__social .fa-google:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+}
+.container .main__divisor {
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.container .main__divisor span {
+  position: relative;
+  bottom: -0.5rem;
+  left: 50%;
+  z-index: 2;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background-color: #dbe4ee;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #264653;
+}
+.container .main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .main__form__signup {
+  width: 100%;
+  padding: 0 35px;
+}
+.container .main__form__signup input {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+}
+.container .main__form p {
+  padding: 0 35px;
+}
+.container .main__form p a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+.container .main__form--btn {
+  width: 80%;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #e9c46a;
+  color: #264653;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.container .main__form--btn:hover {
+  cursor: pointer;
+  color: #2a9d8f;
+  box-shadow: 1px 1px 15px 2px #2a9d8f;
+}
 
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 14px;
+    height: 100vh;
+  }
+
+  .container .main {
+    padding: 1.5rem;
+  }
+  .container .main__form form {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .container {
+    font-size: 13px;
+    grid-template: 1fr/1fr;
+  }
+
+  .right-image img {
+    display: none;
+  }
+
+  .container .main {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container .main {
+    padding: 1.2rem;
+  }
+}
 /* ====================================================================================================================
  *                          HEADER
  * ====================================================================================================================*/
