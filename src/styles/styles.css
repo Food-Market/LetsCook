@@ -180,10 +180,10 @@ body {
     font-size: 1.5rem;
   }
 
-  .main__bottom--center {
+  .main__bottom--btn {
     text-align: center;
-    margin: 0 2rem 2rem 2rem !important;
-    font-size: 0.8rem;
+    margin: 0 !important;
+    font-size: 0.5rem;
   }
 
   .footer {
@@ -236,10 +236,22 @@ body {
   width: 100vw;
   height: 100vh;
 }
+.container .right-image {
+  position: relative;
+  z-index: 4;
+}
 .container .right-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.container .right-image h2 {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  color: #dbe4ee;
 }
 
 .container .main {
@@ -260,6 +272,14 @@ body {
 .container .main__logo h1 {
   color: #264653;
   text-shadow: black;
+}
+.container .main__logo span {
+  margin: 10px 0;
+  color: #264653;
+  font-size: 1rem;
+}
+.container .main__logo small {
+  margin: 10px;
 }
 .container .main__social {
   width: 100%;
@@ -325,10 +345,10 @@ body {
 .container .main__form__signup input {
   width: 100%;
   padding: 10px 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .container .main__form p {
-  padding: 0 35px;
+  padding: 10px 35px;
 }
 .container .main__form p a {
   margin-left: 10px;
@@ -342,10 +362,34 @@ body {
   background-color: #e9c46a;
   color: #264653;
   border-radius: 15px;
+  border: none;
   text-decoration: none;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .container .main__form--btn:hover {
+  cursor: pointer;
+  color: #2a9d8f;
+  box-shadow: 1px 1px 15px 2px #2a9d8f;
+}
+.container .main__form--link {
+  text-decoration: none;
+  color: #264653;
+  font-weight: 700;
+}
+.container .main__signBtn {
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+  color: #e9c46a;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 50px 0 0 0;
+  background-color: #264653;
+}
+.container .main__signBtn:hover {
   cursor: pointer;
   color: #2a9d8f;
   box-shadow: 1px 1px 15px 2px #2a9d8f;
@@ -365,6 +409,10 @@ body {
   }
   .container .main__form form {
     padding: 0 25px;
+  }
+  .container .main__signBtn {
+    width: 60%;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 414px) {
@@ -644,29 +692,29 @@ body {
   display: flex;
   justify-content: center;
   transition: 450ms ease-in;
-}
-.main__bottom:hover {
-  transform: scale(1.1);
-}
-.main__bottom--center {
   display: inherit;
   margin: 3rem;
   padding: 1.5rem;
   background-color: #e9c46a;
-  border-radius: 5px;
+  border-radius: 10px;
 }
-.main__bottom--center a {
+.main__bottom:hover {
+  transform: scale(1.1);
+}
+.main__bottom--btn {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
   color: #264653;
   transition: 400ms all;
 }
-.main__bottom--center a:hover {
+.main__bottom--btn:hover {
   color: #2a9d8f;
 }
 
-/* -------------------- FOOTER ------------------------- */
+/* ====================================================================================================================
+ *                         FOOTER
+ * ====================================================================================================================*/
 .footer {
   height: auto;
   display: flex;
