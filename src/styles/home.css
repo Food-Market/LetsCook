@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-*{
+* {
     margin: 0;
-    padding: 0; 
-    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
     list-style: none;
 }
 
-body{
+body {
     position: relative;
 }
 
-.background-square{
+.background-square {
     position: absolute;
     width: 212px;
     height: 769px;
@@ -21,7 +21,7 @@ body{
     filter: blur(5px);
 }
 
-.logo{
+.logo {
     position: absolute;
     width: 15em;
     height: 15em;
@@ -34,7 +34,7 @@ body{
     filter: none;
 }
 
-.img-1{
+.img-1 {
     position: absolute;
     width: 13em;
     height: 13em;
@@ -48,7 +48,7 @@ body{
     filter: blur(3px);
 }
 
-.img-2{
+.img-2 {
     position: absolute;
     width: 13em;
     height: 13em;
@@ -62,7 +62,7 @@ body{
     filter: blur(3px);
 }
 
-.img-3{
+.img-3 {
     position: absolute;
     width: 13em;
     height: 13em;
@@ -76,11 +76,17 @@ body{
     filter: blur(3px);
 }
 
-.img-4{
+.img-4 {
     position: absolute;
     width: 14em;
     height: 14em;
-    background-image: url(https://static.wixstatic.com/media/ad6aad_dcd212ec23a24cbd9cc40d669860c29c~mv2.png/v1/fill/w_480,h_358,al_c,q_85,usm_0.66_1.00_0.01/IMG_20200422_125447-removebg-preview.webp);
+    background-image: url(
+        https://static.wixstatic.com/media/ad6aad_dcd212ec23a24cbd9cc40d669860c29c~mv2.png/v1/fill/w_480,
+        h_358,
+        al_c,
+        q_85,
+        usm_0.66_1.00_0.01/IMG_20200422_125447-removebg-preview.webp
+    );
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +96,7 @@ body{
     filter: blur(3px);
 }
 
-header{
+header {
     width: 431px;
     height: 234px;
     display: flex;
@@ -102,14 +108,14 @@ header{
     z-index: 3;
 }
 
-.options ul{
+.options ul {
     display: flex;
     justify-content: center;
     width: 9em;
     flex-wrap: wrap;
 }
 
-.options ul li{
+.options ul li {
     margin: 11px 4px;
     padding: 5px 5px;
     font-size: 19px;
@@ -117,12 +123,12 @@ header{
     color: #264653;
 }
 
-.options ul li:hover{
+.options ul li:hover {
     background-color: rgba(233, 196, 106, 0.89);
     border-radius: 1em;
 }
 
-main{
+main {
     top: 14.5em;
     width: 431px;
     height: 300px;
@@ -133,7 +139,7 @@ main{
     justify-content: space-evenly;
 }
 
-main h1{
+main h1 {
     line-height: 63px;
     font-size: 55px;
     letter-spacing: 0.27em;
@@ -142,19 +148,19 @@ main h1{
     padding-left: 11px;
 }
 
-main h3{
+main h3 {
     font-size: 35px;
-line-height: 41px;
-/* identical to box height */
+    line-height: 41px;
+    /* identical to box height */
 
-letter-spacing: 0.26em;
+    letter-spacing: 0.26em;
 
-color: rgba(38, 70, 83, 0.94);
-padding-left: 3em;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(38, 70, 83, 0.94);
+    padding-left: 3em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.search-bar-icon{
+.search-bar-icon {
     width: 5em;
     height: auto;
     background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
@@ -163,7 +169,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-repeat: no-repeat;
 }
 
-.search-bar{
+.search-bar {
     margin-left: 5em;
     background-color: white;
     width: 37em;
@@ -175,31 +181,32 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 3px 2px 3px rgb(0 0 0.16);
 }
 
-.search-bar-input{
+.search-bar-input {
     width: 20em;
     border: none;
     outline: none;
 }
 
-@media (min-width: 768px){
-    body{
+@media (min-width: 768px) {
+    body {
         position: relative;
         /* width: 768px;
         height: 557px; */
-        background-color: #DBE4EE;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -6px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #dbe4ee;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset -6px 4px 4px rgba(0, 0, 0, 0.25);
         display: grid;
         grid-template-columns: 1.2fr 1fr;
         grid-template-rows: 150px 300px 106px;
         z-index: 1;
     }
-    
-    .images{
+
+    .images {
         grid-column: span 1;
-        grid-row: span 3
+        grid-row: span 3;
     }
-    
-    .background-square{
+
+    .background-square {
         position: absolute;
         width: 212px;
         height: 557px;
@@ -208,8 +215,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         left: 8em;
         filter: none;
     }
-    
-    .logo{
+
+    .logo {
         position: absolute;
         width: 10em;
         height: 10em;
@@ -221,8 +228,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 3;
         filter: none;
     }
-    
-    .img-1{
+
+    .img-1 {
         position: absolute;
         width: 8em;
         height: 8em;
@@ -235,8 +242,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 3;
         filter: none;
     }
-    
-    .img-2{
+
+    .img-2 {
         position: absolute;
         width: 8em;
         height: 8em;
@@ -249,8 +256,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 3;
         filter: none;
     }
-    
-    .img-3{
+
+    .img-3 {
         position: absolute;
         width: 8em;
         height: 8em;
@@ -263,12 +270,18 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 3;
         filter: none;
     }
-    
-    .img-4{
+
+    .img-4 {
         position: absolute;
         width: 8em;
         height: 8em;
-        background-image: url(https://static.wixstatic.com/media/ad6aad_dcd212ec23a24cbd9cc40d669860c29c~mv2.png/v1/fill/w_480,h_358,al_c,q_85,usm_0.66_1.00_0.01/IMG_20200422_125447-removebg-preview.webp);
+        background-image: url(
+            https://static.wixstatic.com/media/ad6aad_dcd212ec23a24cbd9cc40d669860c29c~mv2.png/v1/fill/w_480,
+            h_358,
+            al_c,
+            q_85,
+            usm_0.66_1.00_0.01/IMG_20200422_125447-removebg-preview.webp
+        );
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -277,9 +290,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 3;
         filter: none;
     }
-    
-    
-    header{
+
+    header {
         grid-column: 2/3;
         grid-row: span 1;
         display: flex;
@@ -293,21 +305,21 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         width: unset;
         height: unset;
     }
-    
-    .options{
+
+    .options {
         width: 20em;
         height: auto;
     }
-    
-    .options ul{
+
+    .options ul {
         display: flex;
         justify-content: space-around;
         list-style: none;
         flex-wrap: unset;
         width: 26em;
     }
-    
-    .options ul li{
+
+    .options ul li {
         width: 6em;
         height: 01em;
         border-radius: 2em;
@@ -316,12 +328,12 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         align-items: center;
         cursor: pointer;
     }
-    
-    .options ul li:hover{
-        background-color: rgba(233, 196, 106, 0.89);;
+
+    .options ul li:hover {
+        background-color: rgba(233, 196, 106, 0.89);
     }
-    
-    main{
+
+    main {
         grid-column: 2/3;
         grid-row: 2/3;
         display: flex;
@@ -333,15 +345,15 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 1.5em;
         position: unset;
     }
-    
-    main h3{
+
+    main h3 {
         margin-left: 2em;
         color: rgba(38, 70, 83, 0.94);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 1em;
     }
-    
-    .search-bar-icon{
+
+    .search-bar-icon {
         width: 2em;
         height: auto;
         background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
@@ -349,8 +361,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         background-position: center;
         background-repeat: no-repeat;
     }
-    
-    .search-bar{
+
+    .search-bar {
         margin-left: 5em;
         background-color: white;
         width: 20em;
@@ -360,33 +372,34 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         justify-content: flex-start;
         font-size: 0.55em;
     }
-    
-    .search-bar-input{
+
+    .search-bar-input {
         width: 15em;
         border: none;
         outline: none;
     }
 }
 
-@media (min-width: 1024px){
-    body{
+@media (min-width: 1024px) {
+    body {
         position: relative;
         /* width: 1024px;
         height: 886px; */
-        background-color: #DBE4EE;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -6px 4px 4px rgba(0, 0, 0, 0.25);
+        background-color: #dbe4ee;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset -6px 4px 4px rgba(0, 0, 0, 0.25);
         display: grid;
         grid-template-columns: 1.3fr 1fr;
         grid-template-rows: 177px 353px 353px;
         z-index: 1;
     }
-    
-    .images{
+
+    .images {
         grid-column: span 1;
-        grid-row: span 3
+        grid-row: span 3;
     }
-    
-    .background-square{
+
+    .background-square {
         position: absolute;
         width: 282px;
         height: 884px;
@@ -394,8 +407,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 2;
         left: 11em;
     }
-    
-    .logo{
+
+    .logo {
         position: absolute;
         width: 15em;
         height: 15em;
@@ -406,8 +419,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         left: 1em;
         z-index: 3;
     }
-    
-    .img-1{
+
+    .img-1 {
         position: absolute;
         width: 15em;
         height: 15em;
@@ -419,8 +432,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         left: 18em;
         z-index: 3;
     }
-    
-    .img-2{
+
+    .img-2 {
         position: absolute;
         width: 15em;
         height: 15em;
@@ -432,8 +445,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         left: 3em;
         z-index: 3;
     }
-    
-    .img-3{
+
+    .img-3 {
         position: absolute;
         width: 15em;
         height: 15em;
@@ -445,12 +458,18 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         left: 18em;
         z-index: 3;
     }
-    
-    .img-4{
+
+    .img-4 {
         position: absolute;
         width: 15em;
         height: 15em;
-        background-image: url(https://static.wixstatic.com/media/ad6aad_dcd212ec23a24cbd9cc40d669860c29c~mv2.png/v1/fill/w_480,h_358,al_c,q_85,usm_0.66_1.00_0.01/IMG_20200422_125447-removebg-preview.webp);
+        background-image: url(
+            https://static.wixstatic.com/media/ad6aad_dcd212ec23a24cbd9cc40d669860c29c~mv2.png/v1/fill/w_480,
+            h_358,
+            al_c,
+            q_85,
+            usm_0.66_1.00_0.01/IMG_20200422_125447-removebg-preview.webp
+        );
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -458,9 +477,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         left: 6em;
         z-index: 3;
     }
-    
-    
-    header{
+
+    header {
         grid-column: 2/3;
         grid-row: span 1;
         display: flex;
@@ -470,20 +488,20 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 20px;
     }
-    
-    .options{
+
+    .options {
         width: 20em;
         height: auto;
     }
-    
-    .options ul{
+
+    .options ul {
         display: flex;
         justify-content: space-around;
         list-style: none;
         width: 20em;
     }
-    
-    .options ul li{
+
+    .options ul li {
         width: 6em;
         height: 1em;
         border-radius: 2em;
@@ -492,12 +510,12 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         align-items: center;
         cursor: pointer;
     }
-    
-    .options ul li:hover{
+
+    .options ul li:hover {
         background-color: rgba(233, 196, 106, 0.89);
     }
-    
-    main{
+
+    main {
         grid-column: 2/3;
         grid-row: 2/3;
         display: flex;
@@ -508,15 +526,15 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-shadow: 15px 18px 6px rgba(0, 0, 0, 0.31);
         font-size: 1.5em;
     }
-    
-    main h3{
+
+    main h3 {
         margin-left: 2em;
         color: rgba(38, 70, 83, 0.94);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 1em;
     }
-    
-    .search-bar-icon{
+
+    .search-bar-icon {
         width: 2em;
         height: auto;
         background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
@@ -524,8 +542,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         background-position: center;
         background-repeat: no-repeat;
     }
-    
-    .search-bar{
+
+    .search-bar {
         margin-left: 5em;
         background-color: white;
         width: 20em;
@@ -535,186 +553,191 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         justify-content: flex-start;
         font-size: 0.55em;
     }
-    
-    .search-bar-input{
+
+    .search-bar-input {
         width: 15em;
         border: none;
         outline: none;
     }
 }
-@media (min-width: 1440px){
-body{
-    position: relative;
-    /* width: 1440px;
+@media (min-width: 1440px) {
+    body {
+        position: relative;
+        /* width: 1440px;
     height: 884 px; */
-    background-color: #DBE4EE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -6px 4px 4px rgba(0, 0, 0, 0.25);
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    grid-template-rows: 177px 353px 353px;
-    z-index: 1;
-}
+        background-color: #dbe4ee;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset -6px 4px 4px rgba(0, 0, 0, 0.25);
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: 177px 353px 353px;
+        z-index: 1;
+    }
 
-.images{
-    grid-column: span 1;
-    grid-row: span 3
-}
+    .images {
+        grid-column: span 1;
+        grid-row: span 3;
+    }
 
-.background-square{
-    position: absolute;
-    width: 282px;
-    height: 884px;
-    background-color: rgba(233, 196, 106, 0.64);
-    z-index: 2;
-    left: 24em;
-}
+    .background-square {
+        position: absolute;
+        width: 282px;
+        height: 884px;
+        background-color: rgba(233, 196, 106, 0.64);
+        z-index: 2;
+        left: 24em;
+    }
 
-.logo{
-    position: absolute;
-    width: 20em;
-    height: 20em;
-    background-image: url(../styles/assets/Logo.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 6em;
-    z-index: 3;
-}
+    .logo {
+        position: absolute;
+        width: 20em;
+        height: 20em;
+        background-image: url(../styles/assets/Logo.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        left: 6em;
+        z-index: 3;
+    }
 
-.img-1{
-    position: absolute;
-    width: 236px;
-    height: 236px;
-    background-image: url(https://gourmet.com.co/wp-content/uploads/2020/04/Toque-Gourmet-Receta-01.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 8em;
-    left: 30em;
-    z-index: 3;
-}
+    .img-1 {
+        position: absolute;
+        width: 236px;
+        height: 236px;
+        background-image: url(https://gourmet.com.co/wp-content/uploads/2020/04/Toque-Gourmet-Receta-01.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 8em;
+        left: 30em;
+        z-index: 3;
+    }
 
-.img-2{
-    position: absolute;
-    width: 296px;
-    height: 296px;
-    background-image: url(https://sandersonfarms.com/wp-content/uploads/2017/04/Recipes_Creamy_Chicken_Pasta_Hero_709x758-1.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 18em;
-    left: 11em;
-    z-index: 3;
-}
+    .img-2 {
+        position: absolute;
+        width: 296px;
+        height: 296px;
+        background-image: url(https://sandersonfarms.com/wp-content/uploads/2017/04/Recipes_Creamy_Chicken_Pasta_Hero_709x758-1.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 18em;
+        left: 11em;
+        z-index: 3;
+    }
 
-.img-3{
-    position: absolute;
-    width: 296px;
-    height: 296px;
-    background-image: url(https://www.myfoodwifi.com/wp-content/uploads/2018/07/chicken-penne.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 28em;
-    left: 30em;
-    z-index: 3;
-}
+    .img-3 {
+        position: absolute;
+        width: 296px;
+        height: 296px;
+        background-image: url(https://www.myfoodwifi.com/wp-content/uploads/2018/07/chicken-penne.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 28em;
+        left: 30em;
+        z-index: 3;
+    }
 
-.img-4{
-    position: absolute;
-    width: 296px;
-    height: 296px;
-    background-image: url(https://static.wixstatic.com/media/ad6aad_dcd212ec23a24cbd9cc40d669860c29c~mv2.png/v1/fill/w_480,h_358,al_c,q_85,usm_0.66_1.00_0.01/IMG_20200422_125447-removebg-preview.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    top: 37em;
-    left: 14em;
-    z-index: 3;
-}
+    .img-4 {
+        position: absolute;
+        width: 296px;
+        height: 296px;
+        background-image: url(
+            https://static.wixstatic.com/media/ad6aad_dcd212ec23a24cbd9cc40d669860c29c~mv2.png/v1/fill/w_480,
+            h_358,
+            al_c,
+            q_85,
+            usm_0.66_1.00_0.01/IMG_20200422_125447-removebg-preview.webp
+        );
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 37em;
+        left: 14em;
+        z-index: 3;
+    }
 
+    header {
+        grid-column: 2/3;
+        grid-row: span 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #264653;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 25px;
+    }
 
-header{
-    grid-column: 2/3;
-    grid-row: span 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: #264653;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 25px;
-}
+    .options {
+        width: 20em;
+        height: auto;
+    }
 
-.options{
-    width: 20em;
-    height: auto;
-}
+    .options ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
 
-.options ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
+    .options ul li {
+        width: 6em;
+        height: 1em;
+        border-radius: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
 
-.options ul li{
-    width: 6em;
-    height: 1em;
-    border-radius: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+    .options ul li:hover {
+        background-color: rgba(233, 196, 106, 0.89);
+    }
 
-.options ul li:hover{
-    background-color: rgba(233, 196, 106, 0.89);;
-}
+    main {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        letter-spacing: 0.27em;
+        color: rgba(12, 100, 73, 0.74);
+        text-shadow: 15px 18px 6px rgba(0, 0, 0, 0.31);
+        font-size: 2em;
+        width: unset;
+        height: unset;
+    }
 
-main{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    letter-spacing: 0.27em;
-    color: rgba(12, 100, 73, 0.74);
-    text-shadow: 15px 18px 6px rgba(0, 0, 0, 0.31);
-    font-size: 2em;
-    width: unset;
-    height: unset;
-}
+    main h3 {
+        margin-left: 4em;
+        color: rgba(38, 70, 83, 0.94);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 35px;
+    }
 
-main h3{
-    margin-left: 4em;
-    color: rgba(38, 70, 83, 0.94);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 35px;
-}
+    .search-bar-icon {
+        width: 2em;
+        height: auto;
+        background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
+        background-size: 20px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-.search-bar-icon{
-    width: 2em;
-    height: auto;
-    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
-    background-size: 20px 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .search-bar {
+        margin-left: 5em;
+        background-color: white;
+        width: 20em;
+        height: 2em;
+        border-radius: 1em;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.55em;
+    }
 
-.search-bar{
-    margin-left: 5em;
-    background-color: white;
-    width: 20em;
-    height: 2em;
-    border-radius: 1em;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 0.55em;
+    .search-bar-input {
+        width: 20em;
+        border: none;
+        outline: none;
+    }
 }
-
-.search-bar-input{
-    width: 20em;
-    border: none;
-    outline: none;
-}
-}
-

@@ -183,10 +183,13 @@
         }
     }
 
-    .main__bottom--center {
-        text-align: center;
-        margin: 0 2rem 2rem 2rem !important;
-        font-size: 0.8rem;
+    .main__bottom {
+        margin: 0.6rem 2rem 2rem 2rem !important;
+        &--btn {
+            text-align: center;
+            margin: 0 !important;
+            font-size: 0.5rem;
+        }
     }
 
     .footer {

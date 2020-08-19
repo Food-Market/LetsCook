@@ -12,8 +12,8 @@
 }
 
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   font-size: 16px;
   font-family: "Roboto Condensed", sans-serif;
   background-color: #dbe4ee;
@@ -180,10 +180,13 @@ body {
     font-size: 1.5rem;
   }
 
-  .main__bottom--center {
+  .main__bottom {
+    margin: 0.6rem 2rem 2rem 2rem !important;
+  }
+  .main__bottom--btn {
     text-align: center;
-    margin: 0 2rem 2rem 2rem !important;
-    font-size: 0.8rem;
+    margin: 0 !important;
+    font-size: 0.5rem;
   }
 
   .footer {
@@ -305,7 +308,7 @@ body {
   font-weight: 700;
 }
 .main__carousel__cards {
-  width: 100%;
+  width: 90vw;
   height: auto;
   display: grid;
   grid-template: 1fr/repeat(6, 1fr);
@@ -375,25 +378,20 @@ body {
   display: flex;
   justify-content: center;
   transition: 450ms ease-in;
-}
-.main__bottom:hover {
-  transform: scale(1.1);
-}
-.main__bottom--center {
-  display: inherit;
   margin: 3rem;
   padding: 1.5rem;
   background-color: #e9c46a;
   border-radius: 5px;
 }
-.main__bottom--center a {
+.main__bottom--btn {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
   color: #264653;
   transition: 400ms all;
 }
-.main__bottom--center a:hover {
+.main__bottom:hover {
+  transform: scale(1.1);
   color: #2a9d8f;
 }
 
@@ -556,7 +554,7 @@ body {
 
 body {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   background-color: #dbe4ee;
   color: #264653;
@@ -755,7 +753,7 @@ body {
 body {
   background-color: #dbe4ee;
   margin: 0;
-  width: 100%;
+  width: 100vw;
 }
 
 /*------------------------------HEADER------------------------------*/
@@ -1959,5 +1957,238 @@ main .main-addTo {
 
   .main-addTo button {
     width: 80%;
+  }
+}
+/* ------------------FONTS--------------------*/
+/* ------------------VARIABLES--------------------*/
+/* ------------------ CAROUSEL --------------------*/
+/* ------------------PALLETE--------------------*/
+/* ------------------RESPONSIVE--------------------*/
+/* -------GLOBALS-----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #dbe4ee;
+}
+
+/* ====================================================================================================================
+ *  MIXINS  SASS
+ * ====================================================================================================================*/
+/*  VARIABLES SIGNUP     */
+/*******************************/
+.container {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+.container .right-image {
+  position: relative;
+  z-index: 4;
+}
+.container .right-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .right-image h2 {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  color: #dbe4ee;
+}
+
+.container .main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .main__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .main__logo img {
+  width: 18rem;
+}
+.container .main__logo h1 {
+  color: #264653;
+  text-shadow: black;
+}
+.container .main__logo span {
+  margin: 10px 0;
+  color: #264653;
+  font-size: 1rem;
+}
+.container .main__logo small {
+  margin: 10px;
+}
+.container .main__social {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .main__social a {
+  font-size: 2.5rem;
+}
+.container .main__social .fa-facebook {
+  color: #4267b2;
+}
+.container .main__social .fa-facebook:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+}
+.container .main__social .fa-twitter {
+  color: #1da1f2;
+}
+.container .main__social .fa-twitter:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+}
+.container .main__social .fa-google {
+  color: #ee4433;
+}
+.container .main__social .fa-google:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: #e9c46a;
+}
+.container .main__divisor {
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.container .main__divisor span {
+  position: relative;
+  bottom: -0.5rem;
+  left: 50%;
+  z-index: 2;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background-color: #dbe4ee;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #264653;
+}
+.container .main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .main__form__signup {
+  width: 100%;
+  padding: 0 35px;
+}
+.container .main__form__signup input {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+}
+.container .main__form p {
+  padding: 10px 35px;
+}
+.container .main__form p a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+.container .main__form--btn {
+  width: 80%;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #e9c46a;
+  color: #264653;
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.container .main__form--btn:hover {
+  cursor: pointer;
+  color: #2a9d8f;
+  box-shadow: 1px 1px 15px 2px #2a9d8f;
+}
+.container .main__form--link {
+  text-decoration: none;
+  color: #264653;
+  font-weight: 700;
+}
+.container .main__signBtn {
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+  color: #e9c46a;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 50px 0 0 0;
+  background-color: #264653;
+}
+.container .main__signBtn:hover {
+  cursor: pointer;
+  color: #2a9d8f;
+  box-shadow: 1px 1px 15px 2px #2a9d8f;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 14px;
+    height: 100vh;
+  }
+
+  .container .main {
+    padding: 1rem;
+  }
+  .container .main__form form {
+    padding: 0 25px;
+  }
+  .container .main__signBtn {
+    width: 60%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .container {
+    font-size: 13px;
+    grid-template: 1fr/1fr;
+  }
+
+  .right-image img {
+    display: none;
+  }
+
+  .container .main {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    height: 100vh;
+  }
+
+  .container .main {
+    padding: 1.2rem;
   }
 }
