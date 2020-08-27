@@ -1,8 +1,8 @@
 import React from "react"
-import FontAwesomeIcon from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons"
 
-export const CardItem = () => {
+const CardItem = () => {
     return (
         <>
             <div class="main__carousel__cards__item">
@@ -20,3 +20,5 @@ export const CardItem = () => {
         </>
     )
 }
+
+export default CardItem

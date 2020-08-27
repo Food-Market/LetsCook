@@ -1,7 +1,7 @@
 import React from "react"
-import "./styles/signup-login.scss"
+import "../styles/styles.scss"
 
-export const Login = () => {
+const Login = () => {
     return (
         <section className="container">
             <section className="main">
@@ -33,3 +33,5 @@ export const Login = () => {
         </section>
     )
 }
+
+export default Login

@@ -30,7 +30,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(css|sass|scss)$/i,
+                test: /\.scss$/,
                 use: [
                     // fallback to style-loader in development
                     process.env.NODE_ENV !== "production"
@@ -44,9 +44,9 @@ module.exports = {
                 test: /\.(png||jpe?g||gif||svg)$/i,
                 use: [
                     {
-                        loader: "file-loader",
+                        loader: "url-loader",
                         options: {
-                            outputPath: "./src/styles/assets/images",
+                            limit: 900000,
                         },
                     },
                 ],
@@ -68,10 +68,10 @@ module.exports = {
         new htmlWebpackPlugin({
             inject: true,
             template: "public/index.html",
-            filename: "./index.html",
+            filename: "index.html",
         }),
         new MiniCssExtractPlugin({
-            filename: "styles.css",
+            filename: "./dist/main.css",
         }),
     ],
 }

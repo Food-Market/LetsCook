@@ -1,8 +1,8 @@
 import React from "react"
-import "./styles/main-recipes.scss"
+import "../styles/styles.scss"
 import CardItem from "../components/CardItem"
 
-export const Recipes = () => {
+const Recipes = () => {
     return (
         <section className="main">
             <div className="main__title">
@@ -61,3 +61,5 @@ export const Recipes = () => {
         </section>
     )
 }
+
+export default Recipes
