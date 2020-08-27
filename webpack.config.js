@@ -1,68 +1,77 @@
 const path = require("path")
 const htmlWebpackPlugin = require("html-webpack-plugin")
-const CopyWebpackPlugin = require("copy-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
     entry: {
-        entry: "./src/index.js",
+        entry: "./src/index.jsx",
     },
-    mode: "development",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js",
+        filename: "js/bundle.js",
     },
     resolve: {
-        extensions: [".js"],
+        extensions: [".js", ".jsx"],
     },
     module: {
         rules: [
             {
-                test: /\.js$/,
-                use: "babel-loader",
+                test: /\.(js||jsx)$/i,
                 exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader",
+                    options: {
+                        plugins: [
+                            "@babel/plugin-syntax-dynamic-import",
+                            "@babel/plugin-transform-runtime",
+                        ],
+                        presets: ["@babel/preset-env", "@babel/preset-react"],
+                    },
+                },
             },
             {
-                test: /\.css$/i,
+                test: /\.scss$/,
                 use: [
-                    "style-loader", //para desarrollo
+                    // fallback to style-loader in development
+                    process.env.NODE_ENV !== "production"
+                        ? "style-loader"
+                        : MiniCssExtractPlugin.loader,
                     "css-loader",
-                ],
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    // Creates `style` nodes from JS strings
-                    "style-loader",
-                    // Translates CSS into CommonJS
-                    "css-loader",
-                    // Compiles Sass to CSS
                     "sass-loader",
                 ],
             },
             {
-                test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/i,
-                use: {
-                    loader: "url-loader",
-                    options: {
-                        limit: 90000,
+                test: /\.(png||jpe?g||gif||svg)$/i,
+                use: [
+                    {
+                        loader: "url-loader",
+                        options: {
+                            limit: 900000,
+                        },
                     },
-                },
+                ],
+            },
+            {
+                test: /\.(woff||woff2||ttf||otf||eot)$/i,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            outputPath: "./src/styles/assets/font",
+                        },
+                    },
+                ],
             },
         ],
     },
     plugins: [
         new htmlWebpackPlugin({
             inject: true,
-            template: "src/public/index.html",
-            filename: "./index.html",
+            template: "public/index.html",
+            filename: "index.html",
         }),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: "./src/styles/styles.css",
-                    to: "",
-                },
-            ],
+        new MiniCssExtractPlugin({
+            filename: "./dist/main.css",
         }),
     ],
 }

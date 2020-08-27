@@ -3,9 +3,10 @@
 @import "./assets/modules/mixins.scss";
 @import "./assets/modules/responsive.scss";
 
-@import "./assets/modules/footer.scss";
-@import "./assets/modules/main-recipes.scss";
-@import "./assets/modules/header.scss";
+@import "../components/styles/footer";
+@import "../components/styles/header";
+@import "../pages/styles/mainRecipes";
+@import "../pages/styles/signup-login";
 
 @import "./assets/modules/global-payments.scss";
 @import "./assets/modules/header-payments.scss";
@@ -14,5 +15,3 @@
 @import "./assets/modules/new-method.scss";
 
 @import "./assets/modules/mixins-armando.scss";
-
-@import "./assets/modules/signup.scss";
