@@ -1,0 +1,202 @@
+.main-home{
+    top: 14.5em;
+    width: 431px;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-home > h1{
+    line-height: 63px;
+    font-size: 55px;
+    letter-spacing: 0.27em;
+    color: rgba(12, 100, 73, 0.74);
+    text-shadow: 3px 2px 4px rgb(0 0 0);
+    padding-left: 11px;
+}
+
+.main-home > h3{
+    font-size: 35px;
+line-height: 41px;
+/* identical to box height */
+
+letter-spacing: 0.26em;
+
+color: rgba(38, 70, 83, 0.94);
+padding-left: 3em;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-bar-icon{
+    width: 5em;
+    height: auto;
+    background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search-bar{
+    margin-left: 5em;
+    background-color: white;
+    width: 37em;
+    height: 4em;
+    border-radius: 2em;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.55em;
+    box-shadow: 3px 2px 3px rgb(0 0 0.16);
+}
+
+.search-bar-input{
+    width: 20em;
+    border: none;
+    outline: none;
+}
+
+@media (min-width: 768px ) {
+    .main-home{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        letter-spacing: 0.27em;
+        color: rgba(12, 100, 73, 0.74);
+        text-shadow: 15px 18px 6px rgba(0, 0, 0, 0.31);
+        font-size: 1.5em;
+        position: unset;
+    }
+    
+    .main-home > h3{
+        margin-left: 2em;
+        color: rgba(38, 70, 83, 0.94);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 1em;
+    }
+    
+    .search-bar-icon{
+        width: 2em;
+        height: auto;
+        background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
+        background-size: 20px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .search-bar{
+        margin-left: 5em;
+        background-color: white;
+        width: 20em;
+        height: 2em;
+        border-radius: 1em;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.55em;
+    }
+    
+    .search-bar-input{
+        width: 15em;
+        border: none;
+        outline: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .main-home{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        letter-spacing: 0.27em;
+        color: rgba(12, 100, 73, 0.74);
+        text-shadow: 15px 18px 6px rgba(0, 0, 0, 0.31);
+        font-size: 1.5em;
+    }
+    
+    .main-home h3{
+        margin-left: 2em;
+        color: rgba(38, 70, 83, 0.94);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 1em;
+    }
+    
+    .search-bar-icon{
+        width: 2em;
+        height: auto;
+        background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
+        background-size: 20px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .search-bar{
+        margin-left: 5em;
+        background-color: white;
+        width: 20em;
+        height: 2em;
+        border-radius: 1em;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.55em;
+    }
+    
+    .search-bar-input{
+        width: 15em;
+        border: none;
+        outline: none;
+    }
+}
+
+@media (min-width: 1440px){
+    .main-home{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        letter-spacing: 0.27em;
+        color: rgba(12, 100, 73, 0.74);
+        text-shadow: 15px 18px 6px rgba(0, 0, 0, 0.31);
+        font-size: 2em;
+        width: unset;
+        height: unset;
+    }
+    
+    .main-home h3{
+        margin-left: 4em;
+        color: rgba(38, 70, 83, 0.94);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 35px;
+    }
+    
+    .search-bar-icon{
+        width: 2em;
+        height: auto;
+        background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png);
+        background-size: 20px 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .search-bar{
+        margin-left: 5em;
+        background-color: white;
+        width: 20em;
+        height: 2em;
+        border-radius: 1em;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.55em;
+    }
+    
+    .search-bar-input{
+        width: 20em;
+        border: none;
+        outline: none;
+    }
+}
