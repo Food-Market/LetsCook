@@ -43,6 +43,16 @@ const Profile = () => {
           Valid until: <strong>September/29/2020</strong>
         </p>
       </section>
+      <section className="information__ordersHistory">
+        <h3 className="information__ordersID">ID</h3>
+        <h3 className="information__ordersDate">Date</h3>
+        <h3 className="information__ordersAmount">Amount</h3>
+        <h3 className="information__ordersStatus">Status</h3>
+        <p className="information__orders_IDp">00</p>
+        <p className="information__orders_Datep">DDDDMMAAAA</p>
+        <p className="information__ordersAmountp">$</p>
+        <p className="information__ordersStatusp">Status</p>
+      </section>
     </React.Fragment>
   );
 };
