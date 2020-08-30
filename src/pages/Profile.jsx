@@ -23,7 +23,6 @@ const Profile = () => {
           Sydney
         </p>
       </section>
-
       <section className="information__payment">
         <h2>Payment Methods</h2>
         <div className="information__payment__container">
@@ -39,6 +38,10 @@ const Profile = () => {
       </section>
       <section className="information__suscription">
         <h3>Suscription Information</h3>
+        <p>Premium subscription activated</p>
+        <p>
+          Valid until: <strong>September/29/2020</strong>
+        </p>
       </section>
     </React.Fragment>
   );
