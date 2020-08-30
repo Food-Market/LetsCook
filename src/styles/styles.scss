@@ -2,19 +2,17 @@
 @import "./assets/modules/globals.scss";
 @import "./assets/modules/mixins.scss";
 @import "./assets/modules/responsive.scss";
-
 @import "../components/styles/footer";
 @import "../components/styles/header";
 @import "../pages/styles/mainRecipes";
 @import "../pages/styles/signup-login";
-
 @import "./assets/modules/global-payments.scss";
 @import "./assets/modules/header-payments.scss";
 @import "./assets/modules/media-payments.scss";
 @import "./assets/modules/method.scss";
 @import "./assets/modules/new-method.scss";
-
 @import "./assets/modules/mixins-armando.scss";
+@import "./assets/modules/profileStyles.scss";
 @import "../pages/styles/homeLetsCook.css";
 @import "../pages/styles/imagesHome.css";
 @import "../pages/styles/headerHomeSection.css";
