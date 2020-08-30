@@ -11,10 +11,11 @@
     filter: blur(5px);
 }
 
-.logo {
+.logo-home {
     position: absolute;
     width: 15em;
     height: 15em;
+    background-image: url('/src/styles/assets/images/Logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -95,10 +96,11 @@
         filter: none;
     }
 
-    .logo {
+    .logo-home {
         position: absolute;
         width: 10em;
         height: 10em;
+        background-image: url('/src/styles/assets/images/Logo.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -179,10 +181,11 @@
         left: 11em;
     }
 
-    .logo {
+    .logo-home {
         position: absolute;
         width: 15em;
         height: 15em;
+        background-image: url('/src/styles/assets/images/Logo.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -258,10 +261,11 @@
         left: 24em;
     }
 
-    .logo {
+    .logo-home {
         position: absolute;
         width: 20em;
         height: 20em;
+        background-image: url('/src/styles/assets/images/Logo.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
