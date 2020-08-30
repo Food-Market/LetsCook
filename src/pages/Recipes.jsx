@@ -1,5 +1,4 @@
 import React from "react"
-import "../styles/styles.scss"
 import CardItem from "../components/CardItem"
 
 const Recipes = () => {
