@@ -4,7 +4,7 @@
     "description": "Recipes delivery",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server --mode development --config webpack.config.js --watch",
+        "start": "webpack-dev-server --mode development --open --watch --open",
         "build": "webpack --mode production --config webpack.config.js"
     },
     "repository": {
