@@ -1,5 +1,4 @@
 import React from "react"
-import "../styles/styles.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
@@ -50,7 +49,7 @@ const SignUp = () => {
                 </section>
             </section>
             <section className="right-image">
-                <img src="../styles/assets/front-image.jpg" alt="Cook" />
+                <img src="./styles/assets/images/front-image.jpg" alt="Cook" />
                 <h2>Discover a new recipes in front of your door</h2>
             </section>
         </section>

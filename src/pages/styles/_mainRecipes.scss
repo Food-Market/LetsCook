@@ -105,14 +105,14 @@
         }
     }
     &__bottom {
-        display: flex;
-        justify-content: center;
+        text-align: center;
+        width: 38rem;
         transition: 450ms ease-in;
         margin: 3rem;
-        padding: 1.5rem;
+        padding: 1.3rem;
         background-color: $color-btn;
         border-radius: 5px;
-        &--btn {
+        &--center {
             text-decoration: none;
             font-size: 1.5rem;
             font-weight: 700;
