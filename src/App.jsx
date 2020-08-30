@@ -18,14 +18,18 @@ const App = () => {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={SignUp} />
-                <Route exact path="/recipes" component={Recipes} />
+                <Layout>
+                    <Route exact path="/recipes" component={Recipes} />
+                </Layout>
                 <Route
                     exact
                     path="/order-confirmation"
                     component={OrderConfirmation}
                 />
                 <Route exact path="/order-checked" component={OrderChecked} />
-                <Route component={PageError} />
+                <Layout>
+                    <Route component={PageError} />
+                </Layout>
             </Switch>
         </BrowserRouter>
     )

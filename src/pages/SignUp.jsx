@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
@@ -40,16 +41,16 @@ const SignUp = () => {
                         By creating an account, you agree to our Terms of Use
                         and privacy policy
                     </p>
-                    <a className="main__form--btn" href="#">
+                    <Link className="main__form--btn" to="#">
                         Sign Up
-                    </a>
+                    </Link>
                     <p>
-                        Already have an account?<a href="#">Log in</a>
+                        Already have an account?<Link to="/login">Log in</Link>
                     </p>
                 </section>
             </section>
             <section className="right-image">
-                <img src="./styles/assets/images/front-image.jpg" alt="Cook" />
+                <img src="https://i.imgur.com/vFFH0aV.jpg" alt="Cook" />
                 <h2>Discover a new recipes in front of your door</h2>
             </section>
         </section>
