@@ -1,27 +1,34 @@
 @media screen and (min-width: $breakpoint-mobile) {
+  main {
+    .card {
+      width: 95%;
+    }
+  }
 }
 @media screen and (min-width: $breakpoint-tablet) {
-  .main-payment {
-    .screen {
+  main {
+    padding-top: 1%;
+    .card {
       width: 575px;
       background-color: rgba($color: #fff, $alpha: 0.75);
       border-radius: 25px;
       padding: 25px 2.5%;
-      .nav-mobile {
+      // padding-top: 100px;
+      .nav_mobile {
         ul {
           a {
             span {
               display: none;
             }
-            .logo {
+            .logo_payment {
               width: 250px;
               position: relative;
-              bottom: 125px;
+              bottom: 60%;
             }
           }
         }
       }
-      .old-methods {
+      .old_methods {
         position: relative;
         bottom: 100px;
         .methods {
@@ -33,10 +40,19 @@
       form {
         grid-column-gap: 20px;
         position: relative;
-        bottom: 90px;
+        bottom: 60px;
       }
     }
   }
 }
 @media screen and (min-width: $breakpoint-desktop) {
+  .new_method {
+    display: grid;
+    .method_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 35px;
+    }
+  }
 }
