@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp"
 import Recipes from "./pages/Recipes"
 import OrderConfirmation from "./pages/OrderConfirmation"
 import OrderChecked from "./pages/OrderChecked"
+import Payments from "./pages/Payments"
 import PageError from "./pages/PageError"
 
 const App = () => {
@@ -26,6 +27,10 @@ const App = () => {
                     path="/order-confirmation"
                     component={OrderConfirmation}
                 />
+                <Layout>
+                    <Route exact path="/payments" component={Payments} />
+                </Layout>
+
                 <Route exact path="/order-checked" component={OrderChecked} />
                 <Layout>
                     <Route component={PageError} />

@@ -1,11 +1,11 @@
 import React from "react"
+import SearchInput from "./SearchInput"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
 import {
     faShoppingBasket,
     faBars,
     faTimes,
-    faSearch,
     faUser,
 } from "@fortawesome/free-solid-svg-icons"
 
@@ -26,11 +26,7 @@ const Header = () => {
                     <a href="#">Plans</a>
                 </nav>
                 <div className="header__menu__user">
-                    <input type="text" placeholder="Look for your recipe" />
-                    <FontAwesomeIcon
-                        className="header__menu__user--lens"
-                        icon={faSearch}
-                    />
+                    <SearchInput />
                     <div className="header__menu__user--icons">
                         <FontAwesomeIcon
                             className="header__menu__user--icons--fa"
@@ -61,11 +57,7 @@ const Header = () => {
                         />
                     </div>
                     <div className="header__menu__hambur--search">
-                        <input type="text" placeholder="Look for your recipe" />
-                        <FontAwesomeIcon
-                            className="header__menu__hambur--search--lens"
-                            icon={faSearch}
-                        />
+                        <SearchInput />
                     </div>
                     <nav className="header__menu__hambur__menu">
                         <a href="#">Account</a>

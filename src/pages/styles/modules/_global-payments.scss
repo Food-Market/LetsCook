@@ -1,36 +1,17 @@
-$color-main: #264653;
-$color-btn: #e9c46a;
-$color-hover: #2a9d8f;
-$color-light: #dbe4ee;
+@import "../../../styles/assets/modules/globals";
+@import "../../../styles/assets/modules/variables";
 
-$font-text: 'Roboto Mono', monospace;
-$font-titles: 'Roboto Condensed', sans-serif;
-
-$breakpoint-mobile: 375px;
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1440px;
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  background-color: $color-light;
-  color: $color-main;
-  font-family: $font-text;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: inherit;
+.main-payments {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    color: $color-main;
+    font-family: $font-text;
 }
 
 .title_method {
-  font-family: $font-titles;
-  font-size: 1.1em;
+    font-family: $font-titles;
+    font-size: 1.1em;
 }

@@ -1,25 +1,26 @@
 // MIXINS
-@import './assets/modules/mixins';
-@import './assets/modules/mixins-armando';
+@import "./assets/modules/mixins";
+@import "./assets/modules/mixins-armando";
 
 // COMPONENTS
-@import '../components/styles/header';
-@import '../components/styles/footer';
-@import '../components/styles/headerHomeSection';
-@import '../components/styles/mainHomeSection';
-@import '../components/styles/homeLetsCook';
-@import '../components/styles/imagesHome';
-@import '../components/styles/item';
+@import "../components/styles/header";
+@import "../components/styles/footer";
+@import "../components/styles/headerHomeSection";
+@import "../components/styles/mainHomeSection";
+@import "../components/styles/homeLetsCook";
+@import "../components/styles/imagesHome";
+@import "../components/styles/item";
+@import "../components/styles/searchInput";
 
 // PAGES
-@import '../pages/styles/mainRecipes';
-@import '../pages/styles/signup-login';
-@import '../pages/styles/orderChecked';
-@import '../pages/styles/orderConfirmation';
+@import "../pages/styles/mainRecipes";
+@import "../pages/styles/signup-login";
+@import "../pages/styles/orderChecked";
+@import "../pages/styles/orderConfirmation";
 
 // MODULES
-@import '../pages/styles/payments';
+@import "../pages/styles/payments";
 
-@import './assets/modules/variables';
-@import './assets/modules/globals';
-@import './assets/modules/responsive';
+@import "./assets/modules/variables";
+@import "./assets/modules/globals";
+@import "./assets/modules/responsive";
