@@ -5,11 +5,11 @@ import ImagesSection from "../components/ImagesSection"
 
 const Home = () => {
     return (
-        <>
+        <main className="body-home">
+            <ImagesSection />
             <HeaderHomeSection />
             <MainHomeSection />
-            <ImagesSection />
-        </>
+        </main>
     )
 }
 
