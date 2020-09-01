@@ -32,12 +32,12 @@ const Header = () => {
                             className="header__menu__user--icons--fa"
                             icon={faShoppingBasket}
                         />
-
-                        <FontAwesomeIcon
-                            className="header__menu__user--icons--fa"
-                            icon={faUser}
-                        />
-
+                        <Link to="/profile">
+                            <FontAwesomeIcon
+                                className="header__menu__user--icons--fa"
+                                icon={faUser}
+                            />
+                        </Link>
                         <FontAwesomeIcon
                             className="header__menu__user--icons--fa"
                             icon={faBars}

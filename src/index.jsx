@@ -4,4 +4,6 @@ import "./styles/styles.scss"
 
 import App from "./App"
 
+// import RecipeDetails from "./pages/RecipeDetails"
+
 ReactDOM.render(<App />, document.getElementById("app"))

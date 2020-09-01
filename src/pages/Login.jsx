@@ -15,9 +15,9 @@ const Login = () => {
                         <input type="text" placeholder="User Name" />
                         <input type="password" placeholder="Password" />
                     </form>
-                    <a className="main__form--btn" href="#">
+                    <Link className="main__form--btn" to="/profile">
                         Log in
-                    </a>
+                    </Link>
                     <a className="main__form--link" href="#">
                         Forgot account?
                     </a>

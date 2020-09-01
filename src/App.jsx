@@ -5,6 +5,7 @@ import Layout from "./components/Layout"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
+import Profile from "./pages/Profile"
 import Recipes from "./pages/Recipes"
 import RecipeDetails from "./pages/RecipeDetails"
 import OrderConfirmation from "./pages/OrderConfirmation"
@@ -21,9 +22,12 @@ const App = () => {
                 <Route path="/login" component={Login} />
                 <Route path="/signup" component={SignUp} />
                 <Layout>
-                    <Route path="/recipes" component={Recipes} />
+                    <Route path="/profile" component={Profile} />
                 </Layout>
 
+                <Layout>
+                    <Route path="/recipes" component={Recipes} />
+                </Layout>
                 <Layout>
                     <Route path="/recipe-details" component={RecipeDetails} />
                 </Layout>

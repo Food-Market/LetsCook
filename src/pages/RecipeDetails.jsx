@@ -4,32 +4,6 @@ import { Link } from "react-router-dom"
 const RecipeDetails = () => {
     return (
         <React.Fragment>
-            <header className="header-details">
-                <nav>
-                    <ul className="header-container">
-                        <li className="header-container__image">
-                            <a to="">
-                                <img src="" alt="" />
-                            </a>
-                        </li>
-                        <li className="header-container__search">
-                            <a href="">Search</a>
-                        </li>
-                        <li className="header-container__explore">
-                            <a href="">Explore</a>
-                        </li>
-                        <li className="header-container__faq">
-                            <a href="">FAQ</a>
-                        </li>
-                        <li className="header-container__userName">
-                            <a href="">Armando García</a>
-                        </li>
-                        <li className="header-container__icon">
-                            <a href=""></a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
             <main className="main-details">
                 <section className="main-image">
                     <img
