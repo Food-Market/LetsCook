@@ -6,10 +6,10 @@ import Home from "./pages/Home"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
 import Recipes from "./pages/Recipes"
+import RecipeDetails from "./pages/RecipeDetails"
 import OrderConfirmation from "./pages/OrderConfirmation"
 import OrderChecked from "./pages/OrderChecked"
 import Payments from "./pages/Payments"
-import RecipeDetails from "./pages/RecipeDetails"
 
 const App = () => {
     Route.path = "/"
