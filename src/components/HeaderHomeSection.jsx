@@ -7,7 +7,7 @@ const HeaderHomeSection = () => {
             <nav className="options-home">
                 <ul>
                     <li>
-                        <Link to="/recipe-details">What we offer</Link>
+                        <Link to="/recipes">What we offer</Link>
                     </li>
                     <li>
                         <Link to="/login">Log in</Link>

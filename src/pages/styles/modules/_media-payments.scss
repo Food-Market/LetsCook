@@ -2,52 +2,48 @@
 @import "../../../styles/assets/modules/variables";
 
 @media screen and (min-width: $breakpoint-mobile) {
-    .main-payments {
+    .main_payments {
         .card {
             width: 95%;
         }
     }
 }
+
 @media screen and (min-width: $breakpoint-tablet) {
-    .main-payments {
-        padding-top: 1%;
+    .main_payments {
+        padding-top: 5%;
         .card {
             width: 575px;
             background-color: rgba($color: #fff, $alpha: 0.75);
             border-radius: 25px;
             padding: 25px 2.5%;
-            // padding-top: 100px;
             .nav_mobile {
                 ul {
                     a {
                         span {
                             display: none;
                         }
-                        .logo_payment {
-                            width: 250px;
+                        .old_methods {
                             position: relative;
-                            bottom: 60%;
+                            bottom: 100px;
+                            .methods {
+                                a {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                        form {
+                            grid-column-gap: 20px;
+                            position: relative;
+                            bottom: 60px;
                         }
                     }
                 }
             }
-            .old_methods {
-                position: relative;
-                bottom: 100px;
-                .methods {
-                    a {
-                        margin-bottom: 30px;
-                    }
-                }
-            }
-            form {
-                grid-column-gap: 20px;
-                position: relative;
-                bottom: 60px;
-            }
         }
     }
 }
+
 @media screen and (min-width: $breakpoint-desktop) {
     .new_method {
         display: grid;

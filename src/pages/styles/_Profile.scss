@@ -4,10 +4,9 @@ $color-hover: #2a9d8f;
 $color-light: #dbe4ee;
 $color-backgroud: #ffffff;
 $debug-border: 1px solid red;
-$textFont: "Roboto Mono",
-monospace;
-$titleFont: "Roboto Condensed",
-sans-serif;
+$textFont: "Roboto Mono", monospace;
+$titleFont: "Roboto Condensed", sans-serif;
+
 @mixin boxShadowHover {
     box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
 }

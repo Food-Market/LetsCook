@@ -1,14 +1,11 @@
 @import "../../../styles/assets/modules/globals";
 @import "../../../styles/assets/modules/variables";
 
-.main-payments {
-    height: inherit;
+.main_payments {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
-    color: $color-main;
-    font-family: $font-text;
+    height: inherit;
 }
 
 .title_method {

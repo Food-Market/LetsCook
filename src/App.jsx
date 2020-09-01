@@ -10,6 +10,7 @@ import RecipeDetails from "./pages/RecipeDetails"
 import OrderConfirmation from "./pages/OrderConfirmation"
 import OrderChecked from "./pages/OrderChecked"
 import Payments from "./pages/Payments"
+import PageError from "./pages/PageError"
 
 const App = () => {
     Route.path = "/"
@@ -17,29 +18,26 @@ const App = () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/signup" component={SignUp} />
+                <Route path="/login" component={Login} />
+                <Route path="/signup" component={SignUp} />
                 <Layout>
-                    <Route exact path="/recipes" component={Recipes} />
+                    <Route path="/recipes" component={Recipes} />
                 </Layout>
 
                 <Layout>
-                    <Route
-                        exact
-                        path="/recipe-details"
-                        component={RecipeDetails}
-                    />
+                    <Route path="/recipe-details" component={RecipeDetails} />
                 </Layout>
 
                 <Route
-                    exactpath="/order-confirmation"
+                    path="/order-confirmation"
                     component={OrderConfirmation}
                 />
                 <Layout>
-                    <Route exact path="/payments" component={Payments} />
+                    <Route path="/payments" component={Payments} />
                 </Layout>
 
-                <Route exact path="/order-checked" component={OrderChecked} />
+                <Route path="/order-checked" component={OrderChecked} />
+                <Route component={PageError} />
             </Switch>
         </BrowserRouter>
     )

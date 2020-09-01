@@ -1,3 +1,6 @@
+@import "./globals";
+@import "./variables";
+
 $color-main: #264653;
 $color-btn: #e9c46a;
 $color-hover: #2a9d8f;
@@ -168,17 +171,9 @@ $titleFont: "Roboto Condensed", sans-serif;
     color: $color-main;
 }
 
-/*------------------------------BODY------------------------------*/
-
-body {
-    background-color: $color-light;
-    margin: 0;
-    width: 100vw;
-}
-
 /*------------------------------HEADER------------------------------*/
 
-header {
+.header-details {
     width: 100%;
     height: 80px;
     background-color: $color-light;
@@ -186,7 +181,7 @@ header {
     padding: 0;
 }
 
-header nav {
+.header-details nav {
     width: auto;
     height: inherit;
 }
@@ -249,14 +244,14 @@ nav .header-container {
 
 /*------------------------------MAIN------------------------------*/
 
-main {
+.main-details {
     width: 70%;
     margin: 0 auto;
 }
 
 /*------------------------------MAIN IMAGE------------------------------*/
 
-main .main-image {
+.main-details .main-image {
     width: 100%;
     height: 500px;
     margin-top: 10px;
@@ -270,7 +265,7 @@ main .main-image {
 
 /*------------------------------MAIN INTRODUCTION------------------------------*/
 
-main .main-introduction {
+.main-details .main-introduction {
     width: 100%;
     margin-top: 20px;
     margin: 0 auto;
@@ -371,7 +366,7 @@ main .main-introduction {
 
 /*------------------------------MAIN INGREDIENTS------------------------------*/
 
-main .main-ingredients {
+.main-details .main-ingredients {
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
@@ -525,7 +520,7 @@ main .main-ingredients {
     @include ingredientQuantityStyle;
 }
 
-main .main-steps {
+.main-details .main-steps {
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
@@ -546,7 +541,7 @@ main .main-steps {
     @include stepStyleParagraph;
 }
 
-main .main-rate {
+.main-details .main-rate {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -579,7 +574,7 @@ main .main-rate {
     cursor: pointer;
 }
 
-main .main-addTo {
+.main-details .main-addTo {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -610,7 +605,7 @@ main .main-addTo {
 }
 
 @media screen and (max-width: 1024px) {
-    header {
+    .header-details {
         width: 100%;
         height: 100px;
     }
@@ -633,11 +628,11 @@ main .main-addTo {
         width: 30px;
         height: 25px;
     }
-    main {
+    .main-details {
         width: 100%;
         margin: 0 auto;
     }
-    main .main-image {
+    .main-details .main-image {
         width: 100%;
         height: 50%;
         margin-top: 10px;
@@ -675,7 +670,7 @@ main .main-addTo {
         width: 40px;
         height: 40px;
     }
-    main .main-ingredients {
+    .main-details .main-ingredients {
         width: 95%;
     }
     .main-ingredients .main-ingredients__container1 {
@@ -762,7 +757,7 @@ main .main-addTo {
     .main-ingredients__container7 .main-ingredients__quantity {
         @include ingredientQuantityStyle1024;
     }
-    main .main-steps {
+    .main-details .main-steps {
         width: 90%;
     }
     .main-steps h1 {
@@ -795,7 +790,7 @@ main .main-addTo {
 }
 
 @media screen and (max-width: 375px) {
-    header {
+    .header-details {
         width: 100%;
         height: 50px;
         background-color: $color-light;
@@ -837,16 +832,16 @@ main .main-addTo {
     .header-container a {
         display: none;
     }
-    main {
+    .main-details {
         width: 100%;
         margin: 0 auto;
     }
-    main .main-image {
+    .main-details .main-image {
         width: 100%;
         height: 50%;
         margin-top: 10px;
     }
-    main .main-introduction {
+    .main-details .main-introduction {
         width: 100%;
         margin-top: 20px;
         margin: 0 auto;
@@ -871,14 +866,14 @@ main .main-addTo {
         grid-row: 4/5;
         grid-column: 1/5;
     }
-    main .main-ingredients {
+    .main-details .main-ingredients {
         width: 95%;
     }
-    main .main-steps {
+    .main-details .main-steps {
         width: 95%;
         margin-top: 10px;
     }
-    main .main-addTo {
+    .main-details .main-addTo {
         width: 80%;
         height: 100%;
         margin: 0 auto;

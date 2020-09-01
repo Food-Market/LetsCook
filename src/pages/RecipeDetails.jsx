@@ -4,33 +4,33 @@ import { Link } from "react-router-dom"
 const RecipeDetails = () => {
     return (
         <React.Fragment>
-            <header>
+            <header className="header-details">
                 <nav>
                     <ul className="header-container">
                         <li className="header-container__image">
-                            <Link to="">
+                            <a to="">
                                 <img src="" alt="" />
-                            </Link>
+                            </a>
                         </li>
                         <li className="header-container__search">
-                            <Link to="">Search</Link>
+                            <a href="">Search</a>
                         </li>
                         <li className="header-container__explore">
-                            <Link to="">Explore</Link>
+                            <a href="">Explore</a>
                         </li>
                         <li className="header-container__faq">
-                            <Link to="">FAQ</Link>
+                            <a href="">FAQ</a>
                         </li>
                         <li className="header-container__userName">
-                            <Link to="">Armando García</Link>
+                            <a href="">Armando García</a>
                         </li>
                         <li className="header-container__icon">
-                            <Link to=""></Link>
+                            <a href=""></a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main className="main-details">
                 <section className="main-image">
                     <img
                         src="https://i.imgur.com/9Ha7jrT.png"
@@ -63,10 +63,10 @@ const RecipeDetails = () => {
                         chicken! Enjoy it.
                     </p>
                     <div className="main-introduction__loveIcon">
-                        <Link to=""></Link>
+                        <a href=""></a>
                     </div>
                     <div className="main-introduction__shareIcon">
-                        <Link to=""></Link>
+                        <a href=""></a>
                     </div>
                 </section>
                 <section className="main-ingredients">
@@ -146,11 +146,11 @@ const RecipeDetails = () => {
                 <section className="main-rate">
                     <h1>Rater this recipe</h1>
                     <div className="main-rate__icons">
-                        <Link to="" className="main-rate__icon"></Link>
-                        <Link to="" className="main-rate__icon"></Link>
-                        <Link to="" className="main-rate__icon"></Link>
-                        <Link to="" className="main-rate__icon"></Link>
-                        <Link to="" className="main-rate__icon"></Link>
+                        <a href="" className="main-rate__icon"></a>
+                        <a href="" className="main-rate__icon"></a>
+                        <a href="" className="main-rate__icon"></a>
+                        <a href="" className="main-rate__icon"></a>
+                        <a href="" className="main-rate__icon"></a>
                     </div>
                 </section>
                 <section className="main-addTo">
