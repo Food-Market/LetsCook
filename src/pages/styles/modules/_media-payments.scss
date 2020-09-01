@@ -1,19 +1,18 @@
 @media screen and (min-width: $breakpoint-mobile) {
-  main {
+  .main_payments {
     .card {
       width: 95%;
     }
   }
 }
 @media screen and (min-width: $breakpoint-tablet) {
-  main {
-    padding-top: 1%;
+  .main_payments {
+    padding-top: 5%;
     .card {
       width: 575px;
       background-color: rgba($color: #fff, $alpha: 0.75);
       border-radius: 25px;
       padding: 25px 2.5%;
-      // padding-top: 100px;
       .nav_mobile {
         ul {
           a {
