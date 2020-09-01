@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../styles/details.css" />
-        <title>Let's Cook | Confirmacion de Pedido</title>
-    </head>
-    <body>
+import React from 'react';
+
+function Confirmation () {
+    return (
+        <div className="body">
         <div class="background-capa-1"></div>
         <div class="background-capa-2"></div>
         <div class="background-capa-3"></div>
@@ -22,7 +18,6 @@
                 </ul>
             </nav>
             <picture class="logo"></picture>
-            <div class="second-logo"></div>
             <nav class="nav2">
                 <ul>
                     <li>
@@ -34,18 +29,9 @@
                 </ul>
             </nav>
             <h1 class="title">CONFIRM YOUR ORDER</h1>
-            <h1 class="second-title">¡ORDER CHECKED!</h1>
-            <h1 class="third-title">ORDER DATAILS</h1>
-            <h1 class="notify-message-on-header">
-                We’ll notify you as soon we ship your order
-            </h1>
-            <hr class="title-divisor" size="2px" color="#264653" />
+            <hr class="title-divisor" />
         </header>
         <main>
-            <h1 class="notify-message">
-                We’ll notify you as soon we ship your order
-            </h1>
-            <div class="main-button"><a href="#">ORDER DETAILS</a></div>
             <section class="item">
                 <picture class="item-image zucchini-soup"></picture>
                 <div class="item-description">
@@ -128,16 +114,6 @@
             </section>
         </main>
         <footer>
-            <div class="second-logo-footer"></div>
-            <h1 class="second-title-footer">¡ORDER CHECKED!</h1>
-            <h1 class="notify-message-on-header-footer">
-                We’ll notify you as soon we ship your order
-            </h1>
-            <hr class="title-divisor-footer" size="2px" color="#264653" />
-            <div class="premium">
-                <a href="http://">LET'S MEET OUR PREMIUM PLAN</a>
-            </div>
-            <p class="home"><a href="">HOME</a></p>
             <section class="total">
                 <p>TOTAL</p>
                 <p>$ XXXX</p>
@@ -156,5 +132,8 @@
                 <p>PAY</p>
             </section>
         </footer>
-    </body>
-</html>
+        </div>
+    )
+}
+
+export default Confirmation;

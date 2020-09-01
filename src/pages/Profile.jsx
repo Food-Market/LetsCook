@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/styles.scss";
 import { Link } from "react-router-dom";
 
 const Profile = () => {
@@ -9,49 +8,57 @@ const Profile = () => {
         <section className="information__AvatarNameEmail">
           <img src="https://i.imgur.com/h2W3BCh.png" alt="Profile Image" />
           <Link to="/" className="information__Name">
-            Armando García
+            {" "}
+            Armando García{" "}
           </Link>
           <Link to="/" className="information__email">
-            armandobfmv@gmail.com
+            {" "}
+            armandobfmv@gmail.com{" "}
           </Link>
         </section>
-      </section>
-      <section className="information__addresses">
-        <h2>My Addresses</h2>
-        <p>
-          <strong>Main Address</strong> <br /> P Sherman, Street Wallaby 42,
-          Sydney
-        </p>
-      </section>
-      <section className="information__payment">
-        <h2>Payment Methods</h2>
-        <div className="information__payment__container">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/800px-Visa_Inc._logo.svg.png"
-            width="25px"
-            height="10px"
-            alt="Payment Method Logo"
-          />
-          <div className="information__payment__number"></div>
-          <div className="information__payment__due">Due Date: 01/2028"</div>
-        </div>
-      </section>
-      <section className="information__suscription">
-        <h3>Suscription Information</h3>
-        <p>Premium subscription activated</p>
-        <p>
-          Valid until: <strong>September/29/2020</strong>
-        </p>
-      </section>
-      <section className="information__ordersHistory">
-        <h3 className="information__ordersID">ID</h3>
-        <h3 className="information__ordersDate">Date</h3>
-        <h3 className="information__ordersAmount">Amount</h3>
-        <h3 className="information__ordersStatus">Status</h3>
-        <p className="information__orders_IDp">00</p>
-        <p className="information__orders_Datep">DDDDMMAAAA</p>
-        <p className="information__ordersAmountp">$</p>
-        <p className="information__ordersStatusp">Status</p>
+
+        <section className="information__addresses">
+          <h2>My Addresses</h2>
+          <p>P Sherman, Street Wallaby 42, Sydney</p>
+        </section>
+
+        <section className="information__payment">
+          <h2>Payment Methods</h2>
+          <div className="information__payment__container">
+            <img src="./visa.svg" alt="Payment Method Logo" />
+            <div className="information__payment__number">#</div>
+            <div className="information__payment__due">Due Date: 01/2028"</div>
+          </div>
+        </section>
+
+        <section className="information__suscription">
+          <h2>Suscription Information</h2>
+          <p>Premium subscription activated</p>
+          <p>
+            Valid until: <strong>September/29/2020</strong>
+          </p>
+        </section>
+
+        <section className="information__ordersHistory">
+          <h2>Orders History</h2>
+          <table>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+
+            <tr>
+              <td>
+                <Link to="">ID #</Link>
+              </td>
+              <td>DDMMAAAA</td>
+              <td>$</td>
+              <td>In Progress/Completed</td>
+            </tr>
+          </table>
+        </section>
       </section>
     </React.Fragment>
   );

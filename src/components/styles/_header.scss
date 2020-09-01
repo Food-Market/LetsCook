@@ -9,6 +9,7 @@
 .header {
     position: relative;
     z-index: 1;
+    width: 100vw;
     height: 10rem;
     display: flex;
     justify-content: space-evenly;
@@ -62,14 +63,16 @@
                 display: flex;
                 align-items: center;
             }
-            &--icons i {
-                margin: 0 1rem;
-                color: #ffffff;
-                font-size: 1.7rem;
-                transition: all 0.2s ease-out;
-                cursor: pointer;
-                &:hover {
-                    @include hover-icons;
+            &--icons {
+                &--fa {
+                    margin: 0 1rem;
+                    color: #ffffff;
+                    font-size: 1.7rem;
+                    transition: all 0.2s ease-out;
+                    cursor: pointer;
+                    &:hover {
+                        @include hover-icons;
+                    }
                 }
             }
             .fa-bars {
@@ -96,7 +99,7 @@
                 img {
                     width: 6rem;
                 }
-                .fa-times {
+                &--fa {
                     font-size: 1.3rem;
                     cursor: pointer;
                 }
@@ -113,7 +116,7 @@
                     border-radius: 8px;
                     font-size: 0.8rem;
                 }
-                &-lens {
+                &--lens {
                     position: relative;
                     right: 35px;
                     top: 10px;

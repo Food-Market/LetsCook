@@ -1,4 +1,7 @@
-.background-square{
+@import "../../styles/assets/modules/globals";
+@import "../../styles/assets/modules/variables";
+
+.background-square {
     position: absolute;
     width: 212px;
     height: 769px;
@@ -8,11 +11,11 @@
     filter: blur(5px);
 }
 
-.logo{
+.logo-home {
     position: absolute;
     width: 15em;
     height: 15em;
-    background-image: url(../../styles/assets/images/Logo.png);
+    background-image: url('/src/styles/assets/images/Logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +24,7 @@
     filter: none;
 }
 
-.img-1{
+.img-1 {
     position: absolute;
     width: 13em;
     height: 13em;
@@ -35,7 +38,7 @@
     filter: blur(3px);
 }
 
-.img-2{
+.img-2 {
     position: absolute;
     width: 13em;
     height: 13em;
@@ -49,7 +52,7 @@
     filter: blur(3px);
 }
 
-.img-3{
+.img-3 {
     position: absolute;
     width: 13em;
     height: 13em;
@@ -63,7 +66,7 @@
     filter: blur(3px);
 }
 
-.img-4{
+.img-4 {
     position: absolute;
     width: 14em;
     height: 14em;
@@ -77,13 +80,13 @@
     filter: blur(3px);
 }
 
-@media (min-width: 768px){
-    .images{
+@media (min-width: 768px) {
+    .images {
         grid-column: span 1;
-        grid-row: span 3
+        grid-row: span 3;
     }
-    
-    .background-square{
+
+    .background-square {
         position: absolute;
         width: 212px;
         height: 557px;
@@ -92,12 +95,12 @@
         left: 8em;
         filter: none;
     }
-    
-    .logo{
+
+    .logo-home {
         position: absolute;
         width: 10em;
         height: 10em;
-        background-image: url(../../styles/assets/images/Logo.png);
+        background-image: url('/src/styles/assets/images/Logo.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -105,8 +108,8 @@
         z-index: 3;
         filter: none;
     }
-    
-    .img-1{
+
+    .img-1 {
         position: absolute;
         width: 8em;
         height: 8em;
@@ -119,8 +122,8 @@
         z-index: 3;
         filter: none;
     }
-    
-    .img-2{
+
+    .img-2 {
         position: absolute;
         width: 8em;
         height: 8em;
@@ -133,8 +136,8 @@
         z-index: 3;
         filter: none;
     }
-    
-    .img-3{
+
+    .img-3 {
         position: absolute;
         width: 8em;
         height: 8em;
@@ -147,8 +150,8 @@
         z-index: 3;
         filter: none;
     }
-    
-    .img-4{
+
+    .img-4 {
         position: absolute;
         width: 8em;
         height: 8em;
@@ -161,16 +164,15 @@
         z-index: 3;
         filter: none;
     }
-    
 }
 
 @media (min-width: 1024px) {
-    .images{
+    .images {
         grid-column: span 1;
-        grid-row: span 3
+        grid-row: span 3;
     }
-    
-    .background-square{
+
+    .background-square {
         position: absolute;
         width: 282px;
         height: 884px;
@@ -178,20 +180,20 @@
         z-index: 2;
         left: 11em;
     }
-    
-    .logo{
+
+    .logo-home {
         position: absolute;
         width: 15em;
         height: 15em;
-        background-image: url(../../styles/assets/images/Logo.png);
+        background-image: url('/src/styles/assets/images/Logo.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         left: 1em;
         z-index: 3;
     }
-    
-    .img-1{
+
+    .img-1 {
         position: absolute;
         width: 15em;
         height: 15em;
@@ -203,8 +205,8 @@
         left: 18em;
         z-index: 3;
     }
-    
-    .img-2{
+
+    .img-2 {
         position: absolute;
         width: 15em;
         height: 15em;
@@ -216,8 +218,8 @@
         left: 3em;
         z-index: 3;
     }
-    
-    .img-3{
+
+    .img-3 {
         position: absolute;
         width: 15em;
         height: 15em;
@@ -229,8 +231,8 @@
         left: 18em;
         z-index: 3;
     }
-    
-    .img-4{
+
+    .img-4 {
         position: absolute;
         width: 15em;
         height: 15em;
@@ -244,13 +246,13 @@
     }
 }
 
-@media (min-width: 1440px){
-    .images{
+@media (min-width: 1440px) {
+    .images {
         grid-column: span 1;
-        grid-row: span 3
+        grid-row: span 3;
     }
-    
-    .background-square{
+
+    .background-square {
         position: absolute;
         width: 282px;
         height: 884px;
@@ -258,20 +260,20 @@
         z-index: 2;
         left: 24em;
     }
-    
-    .logo{
+
+    .logo-home {
         position: absolute;
         width: 20em;
         height: 20em;
-        background-image: url(../../styles/assets/images/Logo.png);
+        background-image: url('/src/styles/assets/images/Logo.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         left: 6em;
         z-index: 3;
     }
-    
-    .img-1{
+
+    .img-1 {
         position: absolute;
         width: 236px;
         height: 236px;
@@ -283,8 +285,8 @@
         left: 30em;
         z-index: 3;
     }
-    
-    .img-2{
+
+    .img-2 {
         position: absolute;
         width: 296px;
         height: 296px;
@@ -296,8 +298,8 @@
         left: 11em;
         z-index: 3;
     }
-    
-    .img-3{
+
+    .img-3 {
         position: absolute;
         width: 296px;
         height: 296px;
@@ -309,8 +311,8 @@
         left: 30em;
         z-index: 3;
     }
-    
-    .img-4{
+
+    .img-4 {
         position: absolute;
         width: 296px;
         height: 296px;
@@ -322,5 +324,4 @@
         left: 14em;
         z-index: 3;
     }
-    
 }

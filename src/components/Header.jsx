@@ -12,7 +12,7 @@ import {
 const Header = () => {
     return (
         <header className="header">
-            <Link className="header__img" to="/Recipes">
+            <Link className="header__img" to="/recipes">
                 <img
                     className="header__img--logo"
                     src="https://i.imgur.com/nqsC2vJ.png"
@@ -21,21 +21,31 @@ const Header = () => {
             </Link>
             <section className="header__menu">
                 <nav className="header__menu--links">
-                    <Link href="#" to="/recipes">
-                        Recipes
-                    </Link>
+                    <Link to="/recipes">Recipes</Link>
                     <a href="#">FAQ</a>
                     <a href="#">Plans</a>
                 </nav>
-                <div class="header__menu__user">
+                <div className="header__menu__user">
                     <input type="text" placeholder="Look for your recipe" />
-                    <FontAwesomeIcon icon={faSearch} />
-                    <div class="header__menu__user--icons">
-                        <FontAwesomeIcon icon={faShoppingBasket} />
+                    <FontAwesomeIcon
+                        className="header__menu__user--lens"
+                        icon={faSearch}
+                    />
+                    <div className="header__menu__user--icons">
+                        <FontAwesomeIcon
+                            className="header__menu__user--icons--fa"
+                            icon={faShoppingBasket}
+                        />
 
-                        <FontAwesomeIcon icon={faUser} />
+                        <FontAwesomeIcon
+                            className="header__menu__user--icons--fa"
+                            icon={faUser}
+                        />
 
-                        <FontAwesomeIcon icon={faBars} />
+                        <FontAwesomeIcon
+                            className="header__menu__user--icons--fa"
+                            icon={faBars}
+                        />
                     </div>
                 </div>
 
@@ -45,16 +55,22 @@ const Header = () => {
                             src="https://i.imgur.com/nqsC2vJ.png"
                             alt="small-logo"
                         />
-                        <FontAwesomeIcon icon={faTimes} />
+                        <FontAwesomeIcon
+                            className="header__menu__hambur__top--fa"
+                            icon={faTimes}
+                        />
                     </div>
                     <div className="header__menu__hambur--search">
                         <input type="text" placeholder="Look for your recipe" />
-                        <FontAwesomeIcon icon={faSearch} />
+                        <FontAwesomeIcon
+                            className="header__menu__hambur--search--lens"
+                            icon={faSearch}
+                        />
                     </div>
                     <nav className="header__menu__hambur__menu">
                         <a href="#">Account</a>
                         <a href="#">Cart</a>
-                        <Link href="#/recipes">Recipes</Link>
+                        <Link to="/recipes">Recipes</Link>
                         <a href="#breakfast">Breakfasts</a>
                         <a href="#lunches">Lunches</a>
                         <a href="#dinners">Dinners</a>
