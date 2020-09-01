@@ -12,6 +12,7 @@ const useRecipes = () => {
                 (result) => {
                     setIsLoaded(true)
                     setRecipes({ body: result.body })
+                    console.log(recipes)
                 },
                 (error) => {
                     setIsLoaded(true)
