@@ -14,7 +14,6 @@ import Payments from "./pages/Payments"
 import ErrorPage from "./pages/ErrorPage"
 
 const App = () => {
-    Route.path = "/"
     return (
         <BrowserRouter>
             <Switch>
