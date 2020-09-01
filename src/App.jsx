@@ -9,6 +9,7 @@ import Recipes from "./pages/Recipes"
 import OrderConfirmation from "./pages/OrderConfirmation"
 import OrderChecked from "./pages/OrderChecked"
 import Payments from "./pages/Payments"
+import RecipeDetails from "./pages/RecipeDetails"
 
 const App = () => {
     Route.path = "/"
@@ -21,9 +22,17 @@ const App = () => {
                 <Layout>
                     <Route exact path="/recipes" component={Recipes} />
                 </Layout>
+
+                <Layout>
+                    <Route
+                        exact
+                        path="/recipe-details"
+                        component={RecipeDetails}
+                    />
+                </Layout>
+
                 <Route
-                    exact
-                    path="/order-confirmation"
+                    exactpath="/order-confirmation"
                     component={OrderConfirmation}
                 />
                 <Layout>
@@ -31,7 +40,6 @@ const App = () => {
                 </Layout>
 
                 <Route exact path="/order-checked" component={OrderChecked} />
-                <Layout></Layout>
             </Switch>
         </BrowserRouter>
     )
