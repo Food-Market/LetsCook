@@ -6,12 +6,13 @@ import Home from "./pages/Home"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
 import Profile from "./pages/Profile"
+
 import Recipes from "./pages/Recipes"
 import RecipeDetails from "./pages/RecipeDetails"
 import OrderConfirmation from "./pages/OrderConfirmation"
 import OrderChecked from "./pages/OrderChecked"
 import Payments from "./pages/Payments"
-import PageError from "./pages/PageError"
+import ErrorPage from "./pages/ErrorPage"
 
 const App = () => {
     Route.path = "/"
@@ -24,7 +25,6 @@ const App = () => {
                 <Layout>
                     <Route path="/profile" component={Profile} />
                 </Layout>
-
                 <Layout>
                     <Route path="/recipes" component={Recipes} />
                 </Layout>
@@ -41,7 +41,9 @@ const App = () => {
                 </Layout>
 
                 <Route path="/order-checked" component={OrderChecked} />
-                <Route component={PageError} />
+                <Layout>
+                    <Route component={ErrorPage} />
+                </Layout>
             </Switch>
         </BrowserRouter>
     )

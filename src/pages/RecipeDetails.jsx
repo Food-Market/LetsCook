@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const RecipeDetails = () => {
     return (
         <React.Fragment>
-            <main className="main-details">
+            <section className="main-details">
                 <section className="main-image">
                     <img
                         src="https://i.imgur.com/9Ha7jrT.png"
@@ -130,7 +130,7 @@ const RecipeDetails = () => {
                 <section className="main-addTo">
                     <button>ADD TO CART</button>
                 </section>
-            </main>
+            </section>
         </React.Fragment>
     )
 }
