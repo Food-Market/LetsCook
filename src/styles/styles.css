@@ -5040,6 +5040,173 @@ ul {
     display: none;
   }
 }
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.information__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.information__container .information__AvatarNameEmail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.information__container .information__AvatarNameEmail:hover {
+  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
+}
+
+.information__AvatarNameEmail img {
+  width: 20%;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.information__AvatarNameEmail a {
+  text-decoration: none;
+}
+
+.information__AvatarNameEmail a {
+  text-decoration: none;
+  color: black;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.information__addresses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-top: 3em;
+}
+
+.information__addresses h2 {
+  font-size: 2em;
+  font-family: "Roboto Condensed";
+  color: black;
+}
+
+.information__addresses p {
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.information__addresses:hover {
+  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
+}
+
+.information__payment {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.information__payment h2 {
+  font-size: 2em;
+  font-family: "Roboto Condensed";
+  color: black;
+}
+
+.information__payment .information__payment__container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 10% 90%;
+}
+
+.information__payment__container img {
+  width: 70%;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.information__payment__container .information__payment__number {
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  align-self: center;
+}
+
+.information__payment__container .information__payment__due {
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+  align-self: center;
+}
+
+.information__payment:hover {
+  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
+}
+
+.information__suscription {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.information__suscription h2 {
+  font-size: 2em;
+  font-family: "Roboto Condensed";
+  color: black;
+}
+
+.information__suscription p {
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.information__suscription:hover {
+  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
+}
+
+.information__ordersHistory {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.information__ordersHistory h2 {
+  font-size: 2em;
+  font-family: "Roboto Condensed";
+  color: black;
+}
+
+.information__ordersHistory table {
+  width: 100%;
+}
+
+.information__ordersHistory table,
+th,
+td {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  text-align: center;
+  border-spacing: 5px;
+}
+
+table th {
+  font-size: 1.5em;
+  font-family: "Roboto Condensed";
+  color: black;
+}
+
+table td {
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.information__ordersHistory:hover {
+  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
+}
+
 .card {
   display: grid;
   padding: 25px 2.5%;
