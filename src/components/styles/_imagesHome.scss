@@ -4,7 +4,7 @@
 .background-square {
     position: absolute;
     width: 212px;
-    height: 769px;
+    height: -webkit-fill-available;
     background-color: rgba(233, 196, 106, 0.64);
     z-index: 2;
     left: 8em;
@@ -89,7 +89,7 @@
     .background-square {
         position: absolute;
         width: 212px;
-        height: 557px;
+        height: -webkit-fill-available;
         background-color: rgba(233, 196, 106, 0.64);
         z-index: 2;
         left: 8em;
@@ -175,7 +175,7 @@
     .background-square {
         position: absolute;
         width: 282px;
-        height: 884px;
+        height: -webkit-fill-available;
         background-color: rgba(233, 196, 106, 0.64);
         z-index: 2;
         left: 11em;
@@ -255,7 +255,7 @@
     .background-square {
         position: absolute;
         width: 282px;
-        height: 884px;
+        height: -webkit-fill-available;
         background-color: rgba(233, 196, 106, 0.64);
         z-index: 2;
         left: 24em;
