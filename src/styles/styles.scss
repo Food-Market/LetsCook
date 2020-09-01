@@ -14,13 +14,8 @@
 @import "../pages/styles/signup-login";
 @import "../pages/styles/orderChecked";
 @import "../pages/styles/orderConfirmation";
-@import "../pages/styles/Profile";
 // MODULES
-@import "./assets/modules/global-payments";
-@import "./assets/modules/header-payments";
-@import "./assets/modules/media-payments";
-@import "./assets/modules/method";
-@import "./assets/modules/new-method";
+@import "../pages/styles/payments";
 @import "./assets/modules/variables";
 @import "./assets/modules/globals";
 @import "./assets/modules/responsive";

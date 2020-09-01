@@ -1,6 +1,6 @@
-.new-method {
+.new_method {
   display: grid;
-  .method-header {
+  .method_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,24 +23,33 @@
     font-size: 0.75em;
     height: 40px;
   }
-  // input {
-  //   display: flex;
-  //   align-items: center;
-  //   background-color: transparent;
-  //   border-radius: 25px;
-  //   height: 41px;
-  //   border: 1px solid $color-main;
-  // }
-  div {
+  .security_form {
     display: grid;
     grid-template: 1fr 1fr/1fr 1fr;
     & input {
       width: 90%;
       margin: 0 auto;
     }
-    .new-card {
+    .new_card {
       display: flex;
       align-items: center;
     }
+    .secyrity_from--view {
+      display: flex;
+      align-items: center;
+      padding-right: 5%;
+      height: 41px;
+      border-radius: 25px;
+      border: 0.5px solid rgba($color-main, $alpha: 0.25);
+      background-color: transparent;
+      opacity: 0.75;
+      input {
+        border: none;
+      }
+    }
+  }
+  .add_card {
+    margin: 25px auto 0;
+    width: 50%;
   }
 }

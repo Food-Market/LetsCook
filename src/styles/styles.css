@@ -13,7 +13,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 body {
   background-color: #dbe4ee;
   margin: 0;
@@ -5041,217 +5040,19 @@ ul {
     display: none;
   }
 }
-body {
-  font-family: "Roboto Mono", monospace;
-}
-
-.information__container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.information__container .information__AvatarNameEmail {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-}
-
-.information__container .information__AvatarNameEmail:hover {
-  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
-}
-
-.information__AvatarNameEmail img {
-  width: 20%;
-  border-radius: 50%;
-  filter: drop-shadow(0 0 0.5rem black);
-}
-
-.information__AvatarNameEmail a {
-  text-decoration: none;
-}
-
-.information__AvatarNameEmail a {
-  text-decoration: none;
-  color: black;
-  margin-top: 1rem;
-  font-size: 1.1rem;
-}
-
-.information__addresses {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  margin-top: 3em;
-}
-
-.information__addresses h2 {
-  font-size: 2em;
-  font-family: "Roboto Condensed";
-  color: black;
-}
-
-.information__addresses p {
-  font-size: 1em;
-  font-family: "Roboto Mono", monospace;
-  color: black;
-}
-
-.information__addresses:hover {
-  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
-}
-
-.information__payment {
-  width: 100%;
-  margin-top: 3em;
-}
-
-.information__payment h2 {
-  font-size: 2em;
-  font-family: "Roboto Condensed";
-  color: black;
-}
-
-.information__payment .information__payment__container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 10% 90%;
-}
-
-.information__payment__container img {
-  width: 70%;
-  grid-column: 1/2;
-  grid-row: 1/3;
-  align-self: center;
-  justify-self: center;
-}
-
-.information__payment__container .information__payment__number {
-  font-size: 1em;
-  font-family: "Roboto Mono", monospace;
-  color: black;
-  align-self: center;
-}
-
-.information__payment__container .information__payment__due {
-  font-size: 1em;
-  font-family: "Roboto Mono", monospace;
-  color: black;
-  align-self: center;
-}
-
-.information__payment:hover {
-  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
-}
-
-.information__suscription {
-  width: 100%;
-  margin-top: 3em;
-}
-
-.information__suscription h2 {
-  font-size: 2em;
-  font-family: "Roboto Condensed";
-  color: black;
-}
-
-.information__suscription p {
-  font-size: 1em;
-  font-family: "Roboto Mono", monospace;
-  color: black;
-}
-
-.information__suscription:hover {
-  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
-}
-
-.information__ordersHistory {
-  width: 100%;
-  margin-top: 3em;
-}
-
-.information__ordersHistory h2 {
-  font-size: 2em;
-  font-family: "Roboto Condensed";
-  color: black;
-}
-
-.information__ordersHistory table {
-  width: 100%;
-}
-
-.information__ordersHistory table,
-th,
-td {
-  border-bottom: 1px solid black;
-  border-collapse: collapse;
-  padding: 15px;
-  text-align: center;
-  border-spacing: 5px;
-}
-
-table th {
-  font-size: 1.5em;
-  font-family: "Roboto Condensed";
-  color: black;
-}
-
-table td {
-  font-size: 1em;
-  font-family: "Roboto Mono", monospace;
-  color: black;
-}
-
-.information__ordersHistory:hover {
-  box-shadow: 0px 0px 46px 0px rgba(0, 0, 0, 0.27);
-}
-
-/* -------GLOBALS-----------*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  font-size: 16px;
-  font-family: "Roboto Condensed", sans-serif;
-  background-color: #dbe4ee;
-}
-
-main {
-  width: 100%;
-}
-
-/* ------------------FONTS--------------------*/
-/* ------------------VARIABLES--------------------*/
-/* ------------------ CAROUSEL --------------------*/
-/* ------------------PALLETE--------------------*/
-/* ------------------RESPONSIVE--------------------*/
-.main-payment {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: inherit;
-}
-.main-payment .screen {
+.card {
   display: grid;
   padding: 25px 2.5%;
   align-items: center;
   width: 375px;
   height: 812px;
 }
-.main-payment .screen a {
+.card a {
   display: flex;
   text-decoration: none;
   color: #264653;
 }
-.main-payment .screen a.button {
+.card a.button, .card a.add_card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5263,7 +5064,7 @@ main {
   border-color: #264653;
   border-radius: 25px;
 }
-.main-payment .screen input {
+.card input {
   display: flex;
   align-items: center;
   height: 41px;
@@ -5271,79 +5072,125 @@ main {
   border: 0.5px solid rgba(38, 70, 83, 0.25);
   background-color: transparent;
 }
-.main-payment .screen input::placeholder {
+.card input::placeholder {
   text-align: center;
   font-weight: 500;
   color: #264653;
 }
-.main-payment .screen input:last-child {
+.card input:last-child {
   align-items: center;
   font-size: 20px;
 }
 
-.title {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: #dbe4ee;
+  color: #264653;
+  font-family: "Roboto Mono", monospace;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.title_method {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.1em;
 }
 
-.nav-mobile {
+.nav_mobile {
   margin: 0;
   padding: 0;
 }
-.nav-mobile ul {
+.nav_mobile ul {
   margin: 0;
   padding: 0;
 }
-.nav-mobile ul a {
+.nav_mobile ul a {
   display: grid;
 }
-.nav-mobile ul a span {
+.nav_mobile ul a span {
   color: #264653;
   font-size: 16px;
   bottom: 50px;
 }
-.nav-mobile ul a .logo {
+.nav_mobile ul a .logo_payment {
   height: inherit;
   width: 200px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 375px) {
+  main .card {
+    width: 95%;
+  }
+}
 @media screen and (min-width: 768px) {
-  .main-payment .screen {
+  main {
+    padding-top: 1%;
+  }
+  main .card {
     width: 575px;
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 25px;
     padding: 25px 2.5%;
   }
-  .main-payment .screen .nav-mobile ul a span {
+  main .card .nav_mobile ul a span {
     display: none;
   }
-  .main-payment .screen .nav-mobile ul a .logo {
+  main .card .nav_mobile ul a .logo_payment {
     width: 250px;
     position: relative;
-    bottom: 125px;
+    bottom: 60%;
   }
-  .main-payment .screen .old-methods {
+  main .card .old_methods {
     position: relative;
     bottom: 100px;
   }
-  .main-payment .screen .old-methods .methods a {
+  main .card .old_methods .methods a {
     margin-bottom: 30px;
   }
-  .main-payment .screen form {
+  main .card form {
     grid-column-gap: 20px;
     position: relative;
-    bottom: 90px;
+    bottom: 60px;
   }
 }
-.old-methods {
+@media screen and (min-width: 1440px) {
+  .new_method {
+    display: grid;
+  }
+  .new_method .method_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+  }
+}
+.old_methods {
   font-size: 1.5em;
 }
-.old-methods .methods {
+.old_methods .title_method {
+  margin-bottom: 15px;
+}
+.old_methods .methods {
   font-size: 0.75em;
   font-weight: bold;
 }
-.old-methods .methods a {
+.old_methods .methods ul {
+  height: 185px;
+  overflow-y: scroll;
+}
+.old_methods .methods ul a {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
   align-items: center;
@@ -5352,48 +5199,48 @@ main {
   border: 0.5px solid rgba(38, 70, 83, 0.25);
   border-radius: 25px;
 }
-.old-methods .methods a input {
+.old_methods .methods ul a input {
   margin: 0 auto;
   height: 20px;
   width: 20px;
   background-color: transparent;
 }
-.old-methods .methods a input {
+.old_methods .methods ul input {
   background-color: #e9c46a;
 }
-.old-methods .methods a input:hover {
+.old_methods .methods ul input:hover {
   background-color: #e9c46a;
 }
-.old-methods .methods a img {
+.old_methods .methods ul img {
   margin: 0 auto;
   height: inherit;
 }
-.old-methods .methods a p {
+.old_methods .methods ul p {
   margin: 0 auto;
 }
-.old-methods .methods a p:last-child {
+.old_methods .methods ul p:last-child {
   margin-left: 0;
   font-size: 0.5em;
 }
-.old-methods .methods .paypal {
+.old_methods .methods .paypal {
   grid-column: 2/5;
 }
-.old-methods .methods a:hover {
+.old_methods .methods a:hover {
   background-color: #e9c46a;
 }
 
-.new-method {
+.new_method {
   display: grid;
 }
-.new-method .method-header {
+.new_method .method_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.new-method .method-header h3 {
+.new_method .method_header h3 {
   display: flex;
 }
-.new-method .method-header select {
+.new_method .method_header select {
   padding: 0 5px;
   border: 0.5px solid rgba(38, 70, 83, 0.25);
   border-radius: 25px;
@@ -5402,23 +5249,40 @@ main {
   color: #264653;
   font-weight: 700;
 }
-.new-method label {
+.new_method label {
   display: inline-flex;
   align-items: center;
   font-size: 0.75em;
   height: 40px;
 }
-.new-method div {
+.new_method .security_form {
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
 }
-.new-method div input {
+.new_method .security_form input {
   width: 90%;
   margin: 0 auto;
 }
-.new-method div .new-card {
+.new_method .security_form .new_card {
   display: flex;
   align-items: center;
+}
+.new_method .security_form .secyrity_from--view {
+  display: flex;
+  align-items: center;
+  padding-right: 5%;
+  height: 41px;
+  border-radius: 25px;
+  border: 0.5px solid rgba(38, 70, 83, 0.25);
+  background-color: transparent;
+  opacity: 0.75;
+}
+.new_method .security_form .secyrity_from--view input {
+  border: none;
+}
+.new_method .add_card {
+  margin: 25px auto 0;
+  width: 50%;
 }
 
 /* ------------------FONTS--------------------*/
