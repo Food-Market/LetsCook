@@ -25,7 +25,10 @@ const Profile = () => {
         <section className="information__payment">
           <h2>Payment Methods</h2>
           <div className="information__payment__container">
-            <img src="./visa.svg" alt="Payment Method Logo" />
+            <img
+              src="../styles/assets/icons/visa.svg"
+              alt="Payment Method Logo"
+            />
             <div className="information__payment__number">#</div>
             <div className="information__payment__due">Due Date: 01/2028"</div>
           </div>
