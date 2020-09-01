@@ -1,11 +1,11 @@
 import React from "react"
+import SearchInput from "./SearchInput"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
 import {
     faShoppingBasket,
     faBars,
     faTimes,
-    faSearch,
     faUser,
 } from "@fortawesome/free-solid-svg-icons"
 
@@ -22,26 +22,22 @@ const Header = () => {
             <section className="header__menu">
                 <nav className="header__menu--links">
                     <Link to="/recipes">Recipes</Link>
-                    <a href="#">FAQ</a>
+                    <a href="/bad">FAQ</a>
                     <a href="#">Plans</a>
                 </nav>
                 <div className="header__menu__user">
-                    <input type="text" placeholder="Look for your recipe" />
-                    <FontAwesomeIcon
-                        className="header__menu__user--lens"
-                        icon={faSearch}
-                    />
+                    <SearchInput />
                     <div className="header__menu__user--icons">
                         <FontAwesomeIcon
                             className="header__menu__user--icons--fa"
                             icon={faShoppingBasket}
                         />
-
-                        <FontAwesomeIcon
-                            className="header__menu__user--icons--fa"
-                            icon={faUser}
-                        />
-
+                        <Link to="/profile">
+                            <FontAwesomeIcon
+                                className="header__menu__user--icons--fa"
+                                icon={faUser}
+                            />
+                        </Link>
                         <FontAwesomeIcon
                             className="header__menu__user--icons--fa"
                             icon={faBars}
@@ -61,11 +57,7 @@ const Header = () => {
                         />
                     </div>
                     <div className="header__menu__hambur--search">
-                        <input type="text" placeholder="Look for your recipe" />
-                        <FontAwesomeIcon
-                            className="header__menu__hambur--search--lens"
-                            icon={faSearch}
-                        />
+                        <SearchInput />
                     </div>
                     <nav className="header__menu__hambur__menu">
                         <a href="#">Account</a>

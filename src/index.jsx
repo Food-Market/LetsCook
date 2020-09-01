@@ -1,8 +1,15 @@
-import React from 'react'; //para usar JSX (HTMl dentro de JS)
-import ReactDOM from 'react-dom';
-import './styles/styles.scss';
+import React from "react" //para usar JSX (HTMl dentro de JS)
+import ReactDOM from "react-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 
-// import App from "./App"
-import Payments from './pages/Payments';
+import "./styles/styles.scss"
 
-ReactDOM.render(<Payments />, document.getElementById('app'));
+import App from "./App"
+
+// import RecipeDetails from "./pages/RecipeDetails"
+//import Payments from "./pages/Payments"
+//import RecipeDetails from "./pages/RecipeDetails"
+// import Recipes from "./pages/Recipes"
+// import ErrorPage from "./pages/ErrorPage"
+
+ReactDOM.render(<App />, document.getElementById("app"))

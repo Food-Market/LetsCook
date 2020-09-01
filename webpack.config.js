@@ -41,7 +41,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png||jpe?g||gif||svg)$/i,
+                test: /\.(png||jpeg||jpg||gif||svg)$/i,
                 use: [
                     {
                         loader: "url-loader",
@@ -57,7 +57,7 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            outputPath: "./src/styles/assets/font",
+                            outputPath: "/font",
                         },
                     },
                 ],

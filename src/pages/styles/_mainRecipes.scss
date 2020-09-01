@@ -105,13 +105,8 @@
         }
     }
     &__bottom {
-        text-align: center;
         width: 38rem;
-        transition: 450ms ease-in;
-        margin: 3rem;
-        padding: 1.3rem;
-        background-color: $color-btn;
-        border-radius: 5px;
+        @include btn-styles;
         &--center {
             text-decoration: none;
             font-size: 1.5rem;
@@ -120,8 +115,7 @@
             transition: 400ms all;
         }
         &:hover {
-            transform: scale(1.1);
-            color: $color-hover;
+            @include hover-btn;
         }
     }
 }
