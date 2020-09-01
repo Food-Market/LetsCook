@@ -9,7 +9,6 @@ import Recipes from "./pages/Recipes"
 import OrderConfirmation from "./pages/OrderConfirmation"
 import OrderChecked from "./pages/OrderChecked"
 import Payments from "./pages/Payments"
-import PageError from "./pages/PageError"
 
 const App = () => {
     Route.path = "/"
@@ -32,9 +31,7 @@ const App = () => {
                 </Layout>
 
                 <Route exact path="/order-checked" component={OrderChecked} />
-                <Layout>
-                    <Route component={PageError} />
-                </Layout>
+                <Layout></Layout>
             </Switch>
         </BrowserRouter>
     )

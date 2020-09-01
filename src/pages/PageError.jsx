@@ -10,7 +10,7 @@ const PageError = () => {
                 <img src={Logo} alt="Logo LetsCook" />
                 <h1>Lo Sentimos</h1>
                 <h2>Página no Encontrada</h2>
-                <Link to="/">Regresa al Inicio</Link>
+                <Link to="#">Regresa al Inicio</Link>
             </div>
         </section>
     )
