@@ -23,14 +23,14 @@ export const Payments = () => {
 
   return (
     <React.Fragment>
-      <main>
+      <main className='main_payments'>
         <div className='card'>
           <nav className='nav_mobile'>
             <ul>
               <a href=''>
                 <span className='flaticon-left-arrow'></span>
               </a>
-              <a href=''>
+              <a to='/'>
                 <img className='logo_payment' src={Logo} alt='Logo LetsCook' />
               </a>
             </ul>
