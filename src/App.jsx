@@ -5,9 +5,8 @@ import Layout from "./components/Layout"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
-import Profile from "./pages/Profile"
-
 import Recipes from "./pages/Recipes"
+import Profile from "./pages/Profile"
 import RecipeDetails from "./pages/RecipeDetails"
 import OrderConfirmation from "./pages/OrderConfirmation"
 import OrderChecked from "./pages/OrderChecked"
@@ -24,22 +23,14 @@ const App = () => {
                 <Route path="/signup" component={SignUp} />
                 <Layout>
                     <Route path="/profile" component={Profile} />
-                </Layout>
-                <Layout>
                     <Route path="/recipes" component={Recipes} />
-                </Layout>
-                <Layout>
                     <Route path="/recipe-details" component={RecipeDetails} />
+                    <Route path="/payments" component={Payments} />
                 </Layout>
-
                 <Route
                     path="/order-confirmation"
                     component={OrderConfirmation}
                 />
-                <Layout>
-                    <Route path="/payments" component={Payments} />
-                </Layout>
-
                 <Route path="/order-checked" component={OrderChecked} />
                 <Layout>
                     <Route component={ErrorPage} />

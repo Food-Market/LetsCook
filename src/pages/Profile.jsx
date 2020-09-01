@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Profile = () => {
     return (
@@ -10,12 +10,10 @@ const Profile = () => {
                     alt="Profile Image"
                 />
                 <a href="/" className="information__Name">
-                    {" "}
-                    Armando García{" "}
+                    Armando García
                 </a>
                 <a href="/" className="information__email">
-                    {" "}
-                    armandobfmv@gmail.com{" "}
+                    armandobfmv@gmail.com
                 </a>
             </section>
 

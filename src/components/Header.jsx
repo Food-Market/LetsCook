@@ -22,7 +22,7 @@ const Header = () => {
             <section className="header__menu">
                 <nav className="header__menu--links">
                     <Link to="/recipes">Recipes</Link>
-                    <a href="#">FAQ</a>
+                    <a href="/bad">FAQ</a>
                     <a href="#">Plans</a>
                 </nav>
                 <div className="header__menu__user">
