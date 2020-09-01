@@ -1,3 +1,6 @@
+@import "./globals";
+@import "./variables";
+
 $color-main: #264653;
 $color-btn: #e9c46a;
 $color-hover: #2a9d8f;
@@ -168,95 +171,16 @@ $titleFont: "Roboto Condensed", sans-serif;
     color: $color-main;
 }
 
-/*------------------------------BODY------------------------------*/
-
-body {
-    background-color: $color-light;
-    margin: 0;
-    width: 100vw;
-}
-
-/*------------------------------HEADER------------------------------*/
-
-header {
-    width: 100%;
-    height: 80px;
-    background-color: $color-light;
-    margin: 0;
-    padding: 0;
-}
-
-header nav {
-    width: auto;
-    height: inherit;
-}
-
-nav .header-container {
-    width: 100%;
-    height: inherit;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 10%) 55% 5%;
-    align-items: center;
-    justify-items: center;
-}
-
-.header-container .header-container__image {
-    @include liImagesStyle;
-    background-image: url(https://i.imgur.com/QBfmhPH.png);
-    grid-column: 1/2;
-}
-
-.header-container .header-container__search {
-    @include liTextStyle;
-    grid-column: 2/3;
-}
-
-.header-container .header-container__explore {
-    @include liTextStyle;
-    grid-column: 3/4;
-}
-
-.header-container .header-container__faq {
-    @include liTextStyle;
-    grid-column: 4/5;
-}
-
-.header-container .header-container__userName {
-    @include liTextStyle;
-    justify-self: right;
-    grid-column: 5/6;
-}
-
-.header-container .header-container__icon {
-    width: 20px;
-    height: 15px;
-    cursor: pointer;
-    background-image: url(https://i.imgur.com/Ha7p5tL.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-column: 6/7;
-}
-
-.header-container a {
-    text-decoration: none;
-    cursor: pointer;
-    color: $color-main;
-}
-
 /*------------------------------MAIN------------------------------*/
 
-main {
+.main-details {
     width: 70%;
     margin: 0 auto;
 }
 
 /*------------------------------MAIN IMAGE------------------------------*/
 
-main .main-image {
+.main-details .main-image {
     width: 100%;
     height: 500px;
     margin-top: 10px;
@@ -270,7 +194,7 @@ main .main-image {
 
 /*------------------------------MAIN INTRODUCTION------------------------------*/
 
-main .main-introduction {
+.main-details .main-introduction {
     width: 100%;
     margin-top: 20px;
     margin: 0 auto;
@@ -371,7 +295,7 @@ main .main-introduction {
 
 /*------------------------------MAIN INGREDIENTS------------------------------*/
 
-main .main-ingredients {
+.main-details .main-ingredients {
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
@@ -525,7 +449,7 @@ main .main-ingredients {
     @include ingredientQuantityStyle;
 }
 
-main .main-steps {
+.main-details .main-steps {
     width: 80%;
     margin: 0 auto;
     margin-top: 20px;
@@ -546,7 +470,7 @@ main .main-steps {
     @include stepStyleParagraph;
 }
 
-main .main-rate {
+.main-details .main-rate {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -579,7 +503,7 @@ main .main-rate {
     cursor: pointer;
 }
 
-main .main-addTo {
+.main-details .main-addTo {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -610,7 +534,7 @@ main .main-addTo {
 }
 
 @media screen and (max-width: 1024px) {
-    header {
+    .header-details {
         width: 100%;
         height: 100px;
     }
@@ -633,11 +557,11 @@ main .main-addTo {
         width: 30px;
         height: 25px;
     }
-    main {
+    .main-details {
         width: 100%;
         margin: 0 auto;
     }
-    main .main-image {
+    .main-details .main-image {
         width: 100%;
         height: 50%;
         margin-top: 10px;
@@ -675,7 +599,7 @@ main .main-addTo {
         width: 40px;
         height: 40px;
     }
-    main .main-ingredients {
+    .main-details .main-ingredients {
         width: 95%;
     }
     .main-ingredients .main-ingredients__container1 {
@@ -762,7 +686,7 @@ main .main-addTo {
     .main-ingredients__container7 .main-ingredients__quantity {
         @include ingredientQuantityStyle1024;
     }
-    main .main-steps {
+    .main-details .main-steps {
         width: 90%;
     }
     .main-steps h1 {
@@ -795,7 +719,7 @@ main .main-addTo {
 }
 
 @media screen and (max-width: 375px) {
-    header {
+    .header-details {
         width: 100%;
         height: 50px;
         background-color: $color-light;
@@ -837,16 +761,16 @@ main .main-addTo {
     .header-container a {
         display: none;
     }
-    main {
+    .main-details {
         width: 100%;
         margin: 0 auto;
     }
-    main .main-image {
+    .main-details .main-image {
         width: 100%;
         height: 50%;
         margin-top: 10px;
     }
-    main .main-introduction {
+    .main-details .main-introduction {
         width: 100%;
         margin-top: 20px;
         margin: 0 auto;
@@ -871,14 +795,14 @@ main .main-addTo {
         grid-row: 4/5;
         grid-column: 1/5;
     }
-    main .main-ingredients {
+    .main-details .main-ingredients {
         width: 95%;
     }
-    main .main-steps {
+    .main-details .main-steps {
         width: 95%;
         margin-top: 10px;
     }
-    main .main-addTo {
+    .main-details .main-addTo {
         width: 80%;
         height: 100%;
         margin: 0 auto;
