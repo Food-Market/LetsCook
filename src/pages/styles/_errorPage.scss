@@ -7,7 +7,7 @@
         rotate: 0deg;
     }
     100% {
-        rotate: -130deg;
+        rotate: -20deg;
     }
 }
 
@@ -25,7 +25,7 @@
 
 .notFound {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 30px 0;
     background-color: $color-light;
     color: $color-main;
@@ -36,8 +36,10 @@
         align-items: center;
         img {
             width: 280px;
+            border-radius: 20%;
+            box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.16);
             animation-name: logo-rotate;
-            animation-duration: 1.3s;
+            animation-duration: 2s;
             animation-timing-function: cubic-bezier(
                 0.7339,
                 0.0085,
@@ -72,6 +74,34 @@
             }
             &:hover {
                 @include hover-btn;
+            }
+        }
+    }
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 414px) {
+    .notFound {
+        font-size: 0.9rem;
+        &__message {
+            img {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .notFound {
+        font-size: 0.7rem;
+        padding: 20px 15px;
+        &__message {
+            text-align: center;
+            img {
+                width: 220px;
             }
         }
     }

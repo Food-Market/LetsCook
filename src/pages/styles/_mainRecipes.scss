@@ -105,17 +105,20 @@
         }
     }
     &__bottom {
-        width: 38rem;
-        @include btn-styles;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         &--center {
+            width: 50%;
             text-decoration: none;
             font-size: 1.5rem;
             font-weight: 700;
             color: $color-main;
             transition: 400ms all;
-        }
-        &:hover {
-            @include hover-btn;
+            @include btn-styles;
+            &:hover {
+                @include hover-btn;
+            }
         }
     }
 }

@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
-
 import "../styles/assets/font/flaticon.scss"
+
+import Layout from "../components/Layout"
 
 import Logo from "../styles/assets/images/Logo.png"
 
@@ -19,23 +20,22 @@ export const Payments = () => {
     // handleClick = (e) => {
     //   console.log('Clicked');
     // };
-
     return (
-        <React.Fragment>
+        <Layout>
             <main className="main_payments">
                 <div className="card">
                     <nav className="nav_mobile">
                         <ul>
-                            <a href="">
+                            <Link to="/recipe-details">
                                 <span className="flaticon-left-arrow"></span>
-                            </a>
-                            <a to="/">
+                            </Link>
+                            <Link to="/">
                                 <img
                                     className="logo_payment"
                                     src={Logo}
                                     alt="Logo LetsCook"
                                 />
-                            </a>
+                            </Link>
                         </ul>
                     </nav>
 
@@ -43,12 +43,12 @@ export const Payments = () => {
                     {/* _____________________________ */}
                     <NewMethod />
 
-                    <a className="button" href="">
+                    <Link className="button" to="/order-confirmation">
                         Continue
-                    </a>
+                    </Link>
                 </div>
             </main>
-        </React.Fragment>
+        </Layout>
     )
 }
 
