@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 
-function useRecipes() {
+const useRecipes = () => {
     const [error, setError] = useState(null)
     const [isLoaded, setIsLoaded] = useState(false)
-    const [recipes, setRecipes] = useState({ recipes: [] })
+    const [recipes, setRecipes] = useState([])
 
     useEffect(() => {
-        fetch("http://161.35.124.63:3000/api/maestro")
-            .then((response) => {
-                return response.json()
-            })
+        window
+            .fetch("http://localhost:3000/recipes")
+            .then((response) => response.json())
             .then(
-                (result) => {
+                (response) => {
                     setIsLoaded(true)
-                    setRecipes({ recipes: result.body })
+                    setRecipes(response)
                     console.log(recipes)
                 },
                 (error) => {
