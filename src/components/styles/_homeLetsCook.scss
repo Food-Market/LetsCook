@@ -16,6 +16,7 @@
         display: grid;
         grid-template-columns: 1.2fr 1fr;
         grid-template-rows: 150px 300px 106px;
+        height: -webkit-fill-available;
         z-index: 1;
     }
 }
@@ -32,6 +33,7 @@
         grid-template-columns: 1.3fr 1fr;
         grid-template-rows: 177px 353px 353px;
         z-index: 1;
+        height: -webkit-fill-available;
     }
 }
 
@@ -47,5 +49,6 @@
         grid-template-columns: 1.3fr 1fr;
         grid-template-rows: 177px 353px 353px;
         z-index: 1;
+        height: -webkit-fill-available;
     }
 }

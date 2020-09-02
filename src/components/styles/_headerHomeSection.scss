@@ -16,8 +16,8 @@
 .options-home > ul {
     display: flex;
     justify-content: center;
-    width: 9em;
-    flex-wrap: wrap;
+    width: 18em;
+    flex-flow: row;
 }
 
 .options-home > ul > li {
@@ -26,6 +26,7 @@
     font-size: 19px;
     line-height: 29px;
     color: #264653;
+    text-align: center;
 }
 
 .options-home > ul > li:hover {

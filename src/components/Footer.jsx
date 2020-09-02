@@ -9,9 +9,7 @@ const Footer = () => {
         <footer className="footer">
             <section className="footer__menu">
                 <nav className="footer__menu--links">
-                    <Link href="#" to="/recipes">
-                        Recipes
-                    </Link>
+                    <Link to="/recipes">Recipes</Link>
                     <a href="#/faq">FAQ</a>
                     <a href="#/plans">Plans</a>
                 </nav>
