@@ -13,9 +13,9 @@ import Paypal from '../styles/assets/icons/paypal.svg';
 export default function Payments() {
   //   const [card, setCard] = useState('');
 
-  // handleClick = () => {
-  //   console.log('Clicked');
-  // };
+  handleClick = () => {
+    console.log('Clicked');
+  };
 
   return (
     <Layout>
@@ -117,10 +117,10 @@ export default function Payments() {
               </div>
             </div>
             <Link
-              onChange={this.handleClick}
+              // onChange={this.handleClick}
               to='/'
               type='button'
-              // onClick={this.handleClick}
+              onClick={handleClick}
               className='add_card'
             >
               Add Method
