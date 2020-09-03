@@ -2,7 +2,7 @@
   "name": "letscook-master",
   "version": "1.0.0",
   "description": "Recipes delivery",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --watch",
     "build": "webpack --mode production --config webpack.config.js"
@@ -51,7 +51,7 @@
     "@fortawesome/react-fontawesome": "0.1.11",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-router": "5.2.0",
+    "react-router": "^5.2.0",
     "react-router-dom": "5.2.0"
   }
 }
