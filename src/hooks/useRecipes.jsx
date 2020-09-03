@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react"
 
-const useRecipes = () => {
+function useRecipes() {
     const [error, setError] = useState(null)
     const [isLoaded, setIsLoaded] = useState(false)
-    const [recipes, setRecipes] = useState({ body: [] })
+    const [recipes, setRecipes] = useState({ recipes: [] })
 
     useEffect(() => {
         fetch("http://161.35.124.63:3000/api/maestro")
-            .then((res) => res.json())
+            .then((response) => {
+                return response.json()
+            })
             .then(
                 (result) => {
                     setIsLoaded(true)
-                    setRecipes({ body: result.body })
+                    setRecipes({ recipes: result.body })
                     console.log(recipes)
                 },
                 (error) => {
@@ -20,7 +22,7 @@ const useRecipes = () => {
                 }
             )
     }, [])
-    return { recipes, error, isLoaded }
+    return [recipes, error, isLoaded]
 }
 
 export default useRecipes

@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import Layout from "../components/Layout"
 
 const RecipeDetails = () => {
     return (
-        <React.Fragment>
+        <Layout>
             <section className="main-details">
                 <section className="main-image">
                     <img
@@ -131,7 +132,7 @@ const RecipeDetails = () => {
                     <button>ADD TO CART</button>
                 </section>
             </section>
-        </React.Fragment>
+        </Layout>
     )
 }
 

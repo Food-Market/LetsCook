@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Layout from './components/Layout';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
@@ -18,19 +17,15 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/login' component={Login} />
-        <Route path='/signup' component={SignUp} />
-        <Layout>
-          <Route path='/profile' component={Profile} />
-          <Route path='/recipes' component={Recipes} />
-          <Route path='/recipe-details' component={RecipeDetails} />
-          <Route path='/payments' component={Payments} />
-        </Layout>
-        <Route path='/order-confirmation' component={OrderConfirmation} />
-        <Route path='/order-checked' component={OrderChecked} />
-        <Layout>
-          <Route component={ErrorPage} />
-        </Layout>
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/signup' component={SignUp} />
+        <Route exact path='/profile' component={Profile} />
+        <Route exact path='/recipes' component={Recipes} />
+        <Route exact path='/recipe-details' component={RecipeDetails} />
+        <Route exact path='/payments' component={Payments} />
+        <Route exact path='/order-confirmation' component={OrderConfirmation} />
+        <Route exact path='/order-checked' component={OrderChecked} />
+        <Route component={ErrorPage} />
       </Switch>
     </BrowserRouter>
   );
