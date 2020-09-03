@@ -1,19 +1,17 @@
 import { useState, useEffect } from "react"
 
-const useRecipes = () => {
-    const [error, setError] = useState(null)
-    const [isLoaded, setIsLoaded] = useState(false)
+function useRecipes() {
     const [recipes, setRecipes] = useState([])
+    const [isLoaded, setIsLoaded] = useState(false)
+    const [error, setError] = useState(null)
 
     useEffect(() => {
-        window
-            .fetch("http://localhost:3000/recipes")
+        fetch("http://localhost:3000/recipes")
             .then((response) => response.json())
             .then(
-                (response) => {
+                (result) => {
                     setIsLoaded(true)
-                    setRecipes(response)
-                    console.log(recipes)
+                    setRecipes(result)
                 },
                 (error) => {
                     setIsLoaded(true)
@@ -21,7 +19,8 @@ const useRecipes = () => {
                 }
             )
     }, [])
-    return [recipes, error, isLoaded]
+
+    return [recipes, isLoaded, error]
 }
 
 export default useRecipes

@@ -39,7 +39,10 @@
             grid-template: 1fr 1fr / 1fr 1fr 1fr !important;
             &__item {
                 width: 85% !important;
-                height: 85% !important;
+                height: 80% !important;
+            }
+            &--titles {
+                font-size: 1rem;
             }
         }
     }

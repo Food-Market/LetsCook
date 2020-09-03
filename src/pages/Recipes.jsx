@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import CardItem from "../components/CardItem"
+import { CardItem } from "../components/CardItem"
 import Layout from "../components/Layout"
 
 const Recipes = () => {
@@ -19,11 +19,6 @@ const Recipes = () => {
 
                     <div className="main__carousel__cards">
                         <CardItem />
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
                     </div>
 
                     <h2 className="main__carousel--subtitles" id="lunches">
@@ -32,11 +27,6 @@ const Recipes = () => {
 
                     <div className="main__carousel__cards">
                         <CardItem />
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
                     </div>
 
                     <h2 className="main__carousel--subtitles" id="dinners">
@@ -44,11 +34,6 @@ const Recipes = () => {
                     </h2>
 
                     <div className="main__carousel__cards">
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
-                        <CardItem />
                         <CardItem />
                     </div>
 
