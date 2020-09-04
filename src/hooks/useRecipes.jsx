@@ -6,12 +6,12 @@ function useRecipes() {
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        fetch("http://localhost:3000/recipes")
+        fetch("http://161.35.124.63:3000/api/maestro")
             .then((response) => response.json())
             .then(
                 (result) => {
                     setIsLoaded(true)
-                    setRecipes(result)
+                    setRecipes(result.body)
                 },
                 (error) => {
                     setIsLoaded(true)

@@ -1,13 +1,35 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { Link } from "react-router-dom"
 import SearchInput from "./SearchInput"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Link } from "react-router-dom"
 import {
     faShoppingBasket,
     faBars,
-    faTimes,
     faUser,
 } from "@fortawesome/free-solid-svg-icons"
+
+import HamburMenu from "../components/HamburMenu"
+
+function useHamburMenu() {
+    useEffect(() => {
+        document
+            .getElementById("#hambur-icon")
+            .addEventListener("click", () => {
+                console.log("click")
+                document
+                    .querySelector(".header__menu__hambur")
+                    .classList.toggle("show")
+            })
+
+        document
+            .getElementById("#closed-icon")
+            .addEventListener("click", () => {
+                document
+                    .querySelector(".header__menu__hambur")
+                    .classList.toggle("show")
+            })
+    }, [])
+}
 
 const Header = () => {
     return (
@@ -40,36 +62,13 @@ const Header = () => {
                         </Link>
                         <FontAwesomeIcon
                             className="header__menu__user--icons--fa"
+                            id="hambur-icon"
                             icon={faBars}
                         />
                     </div>
                 </div>
 
-                <div className="header__menu__hambur .show">
-                    <div className="header__menu__hambur__top">
-                        <img
-                            src="https://i.imgur.com/nqsC2vJ.png"
-                            alt="small-logo"
-                        />
-                        <FontAwesomeIcon
-                            className="header__menu__hambur__top--fa"
-                            icon={faTimes}
-                        />
-                    </div>
-                    <div className="header__menu__hambur--search">
-                        <SearchInput />
-                    </div>
-                    <nav className="header__menu__hambur__menu">
-                        <a href="#">Account</a>
-                        <a href="#">Cart</a>
-                        <Link to="/recipes">Recipes</Link>
-                        <a href="#breakfast">Breakfasts</a>
-                        <a href="#lunches">Lunches</a>
-                        <a href="#dinners">Dinners</a>
-                        <a href="#">Plans</a>
-                        <a href="#">FAQ</a>
-                    </nav>
-                </div>
+                <HamburMenu />
             </section>
         </header>
     )

@@ -92,13 +92,14 @@
                     &:hover {
                         opacity: 1;
                     }
-                }
-                .fa-shopping-basket {
-                    font-size: 1.5rem;
-                    &:hover {
-                        @include hover-icons;
-                        font-size: 1.7rem;
-                        cursor: pointer;
+                    .fa-shopping-basket {
+                        font-size: 1.5rem;
+                        color: $color-main;
+                        &:hover {
+                            @include hover-icons;
+                            font-size: 1.7rem;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
