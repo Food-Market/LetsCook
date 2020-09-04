@@ -12,6 +12,8 @@ dist
 
 # misc
 .map
+.log
+.config
 .DS_Store
 .env.local
 .env.development.local

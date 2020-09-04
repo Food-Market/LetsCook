@@ -39,9 +39,17 @@
             grid-template: 1fr 1fr / 1fr 1fr 1fr !important;
             &__item {
                 width: 85% !important;
-                height: 85% !important;
+                height: 80% !important;
+            }
+            &--titles {
+                font-size: 1rem;
             }
         }
+    }
+
+    .main__bottom--center {
+        width: 60%;
+        font-size: 1.4rem;
     }
 
     .fa-user {
@@ -132,6 +140,14 @@
     .header__menu__hambur.show.show.show {
         transform: translateX(-190px);
     }
+
+    .main__bottom {
+        margin-top: 1rem;
+        &--center {
+            width: 70%;
+            font-size: 1.2rem;
+        }
+    }
 }
 
 /*------------- SMART-PHONES  375px-------------------*/
@@ -184,11 +200,10 @@
     }
 
     .main__bottom {
-        margin: 0.6rem 2rem 2rem 2rem !important;
-        &--btn {
-            text-align: center;
-            margin: 0 !important;
-            font-size: 0.5rem;
+        margin-top: 1rem;
+        &--center {
+            width: 75%;
+            font-size: 1.2rem;
         }
     }
 

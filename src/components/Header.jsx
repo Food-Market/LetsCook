@@ -1,18 +1,40 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
+import SearchInput from "./SearchInput"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
     faShoppingBasket,
     faBars,
-    faTimes,
-    faSearch,
     faUser,
 } from "@fortawesome/free-solid-svg-icons"
+
+import HamburMenu from "../components/HamburMenu"
+
+function useHamburMenu() {
+    useEffect(() => {
+        document
+            .getElementById("#hambur-icon")
+            .addEventListener("click", () => {
+                console.log("click")
+                document
+                    .querySelector(".header__menu__hambur")
+                    .classList.toggle("show")
+            })
+
+        document
+            .getElementById("#closed-icon")
+            .addEventListener("click", () => {
+                document
+                    .querySelector(".header__menu__hambur")
+                    .classList.toggle("show")
+            })
+    }, [])
+}
 
 const Header = () => {
     return (
         <header className="header">
-            <Link className="header__img" to="/Recipes">
+            <Link className="header__img" to="/recipes">
                 <img
                     className="header__img--logo"
                     src="https://i.imgur.com/nqsC2vJ.png"
@@ -21,47 +43,32 @@ const Header = () => {
             </Link>
             <section className="header__menu">
                 <nav className="header__menu--links">
-                    <Link href="#" to="/recipes">
-                        Recipes
-                    </Link>
-                    <a href="#">FAQ</a>
+                    <Link to="/recipes">Recipes</Link>
+                    <a href="/bad">FAQ</a>
                     <a href="#">Plans</a>
                 </nav>
-                <div class="header__menu__user">
-                    <input type="text" placeholder="Look for your recipe" />
-                    <FontAwesomeIcon icon={faSearch} />
-                    <div class="header__menu__user--icons">
-                        <FontAwesomeIcon icon={faShoppingBasket} />
-
-                        <FontAwesomeIcon icon={faUser} />
-
-                        <FontAwesomeIcon icon={faBars} />
-                    </div>
-                </div>
-
-                <div className="header__menu__hambur .show">
-                    <div className="header__menu__hambur__top">
-                        <img
-                            src="https://i.imgur.com/nqsC2vJ.png"
-                            alt="small-logo"
+                <div className="header__menu__user">
+                    <SearchInput />
+                    <div className="header__menu__user--icons">
+                        <FontAwesomeIcon
+                            className="header__menu__user--icons--fa"
+                            icon={faShoppingBasket}
                         />
-                        <FontAwesomeIcon icon={faTimes} />
+                        <Link to="/profile">
+                            <FontAwesomeIcon
+                                className="header__menu__user--icons--fa"
+                                icon={faUser}
+                            />
+                        </Link>
+                        <FontAwesomeIcon
+                            className="header__menu__user--icons--fa"
+                            id="hambur-icon"
+                            icon={faBars}
+                        />
                     </div>
-                    <div className="header__menu__hambur--search">
-                        <input type="text" placeholder="Look for your recipe" />
-                        <FontAwesomeIcon icon={faSearch} />
-                    </div>
-                    <nav className="header__menu__hambur__menu">
-                        <a href="#">Account</a>
-                        <a href="#">Cart</a>
-                        <Link href="#/recipes">Recipes</Link>
-                        <a href="#breakfast">Breakfasts</a>
-                        <a href="#lunches">Lunches</a>
-                        <a href="#dinners">Dinners</a>
-                        <a href="#">Plans</a>
-                        <a href="#">FAQ</a>
-                    </nav>
                 </div>
+
+                <HamburMenu />
             </section>
         </header>
     )

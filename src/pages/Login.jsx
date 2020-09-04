@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/styles.scss"
+import { Link } from "react-router-dom"
 
 const Login = () => {
     return (
@@ -15,19 +15,19 @@ const Login = () => {
                         <input type="text" placeholder="User Name" />
                         <input type="password" placeholder="Password" />
                     </form>
-                    <a className="main__form--btn" href="#">
-                        Log in{" "}
-                    </a>
+                    <Link className="main__form--btn" to="/profile">
+                        Log in
+                    </Link>
                     <a className="main__form--link" href="#">
-                        Forgot account? /
+                        Forgot account?
                     </a>
-                    <a className="main__signBtn" href="#">
-                        Register New Account{" "}
-                    </a>
+                    <Link className="main__signBtn" to="/signup">
+                        Register New Account
+                    </Link>
                 </section>
             </section>
             <section className="right-image">
-                <img src="../styles/assets/images/front-image.jpg" alt="Cook" />
+                <img src="https://i.imgur.com/vFFH0aV.jpg" alt="Cook" />
                 <h2>Discover a new recipes in front of your door</h2>
             </section>
         </section>

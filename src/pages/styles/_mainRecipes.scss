@@ -86,42 +86,40 @@
                     display: flex;
                     justify-content: space-evenly;
                     align-items: center;
-                    padding: 1rem 0;
-                    font-size: 1.2rem;
+                    padding: 1rem 0.8rem;
+                    font-size: 1.1rem;
                     color: $color-main;
                     &:hover {
                         opacity: 1;
                     }
-                }
-                .fa-shopping-basket {
-                    font-size: 1.5rem;
-                    &:hover {
-                        @include hover-icons;
-                        font-size: 1.7rem;
-                        cursor: pointer;
+                    .fa-shopping-basket {
+                        font-size: 1.5rem;
+                        color: $color-main;
+                        &:hover {
+                            @include hover-icons;
+                            font-size: 1.7rem;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
         }
     }
     &__bottom {
+        width: 100%;
         display: flex;
         justify-content: center;
-        transition: 450ms ease-in;
-        margin: 3rem;
-        padding: 1.5rem;
-        background-color: $color-btn;
-        border-radius: 5px;
-        &--btn {
+        &--center {
+            width: 50%;
             text-decoration: none;
             font-size: 1.5rem;
             font-weight: 700;
             color: $color-main;
             transition: 400ms all;
-        }
-        &:hover {
-            transform: scale(1.1);
-            color: $color-hover;
+            @include btn-styles;
+            &:hover {
+                @include hover-btn;
+            }
         }
     }
 }
