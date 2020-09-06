@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons"
 
-import useRecipes from "../hooks/useRecipes"
+import useBreakFast from "../hooks/useBreakFast"
 
-export const CardItem = () => {
-    const [recipes, isLoaded, error] = useRecipes()
+export const CardItemBreakFast = () => {
+    const [recipes, isLoaded, error] = useBreakFast()
 
     if (error) {
         return <div>Error: {error.message}</div>

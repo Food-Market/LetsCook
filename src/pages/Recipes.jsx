@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import { CardItem } from "../components/CardItem"
+import { CardItemBreakFast } from "../components/CardItemBreakFast"
+import { CardItemLunch } from "../components/CardItemLunch"
+import { CardItemDinner } from "../components/CardItemDinner"
+
 import Layout from "../components/Layout"
 
 const Recipes = () => {
@@ -18,7 +21,7 @@ const Recipes = () => {
                     </h2>
 
                     <div className="main__carousel__cards">
-                        <CardItem />
+                        <CardItemBreakFast />
                     </div>
 
                     <h2 className="main__carousel--subtitles" id="lunches">
@@ -26,7 +29,7 @@ const Recipes = () => {
                     </h2>
 
                     <div className="main__carousel__cards">
-                        <CardItem />
+                        <CardItemLunch />
                     </div>
 
                     <h2 className="main__carousel--subtitles" id="dinners">
@@ -34,7 +37,7 @@ const Recipes = () => {
                     </h2>
 
                     <div className="main__carousel__cards">
-                        <CardItem />
+                        <CardItemDinner />
                     </div>
 
                     <section className="main__bottom">
