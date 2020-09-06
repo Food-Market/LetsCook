@@ -4,12 +4,27 @@ import SearchInput from "../components/SearchInput"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/free-solid-svg-icons"
 
-const HamburMenu = () => {
+const HamburMenu = ({ show }) => {
+    function showClass() {
+        if (show) {
+            return "show"
+        } else {
+            return ""
+        }
+    }
+
+    function noShowClass() {
+        if (!true) {
+            showClass()
+        }
+    }
+
     return (
-        <div className="header__menu__hambur .show">
+        <div className={`header__menu__hambur ${showClass()} `}>
             <div className="header__menu__hambur__top">
                 <img src="https://i.imgur.com/nqsC2vJ.png" alt="small-logo" />
                 <FontAwesomeIcon
+                    onClick={noShowClass()}
                     className="header__menu__hambur__top--fa"
                     icon={faTimes}
                 />
