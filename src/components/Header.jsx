@@ -1,15 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
 import SearchInput from "./SearchInput"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Link } from "react-router-dom"
 import {
     faShoppingBasket,
     faBars,
-    faTimes,
     faUser,
 } from "@fortawesome/free-solid-svg-icons"
 
+import HamburMenu from "../components/HamburMenu"
+
 const Header = () => {
+    const [showHambur, setShowHambur] = useState(false)
+
+    function handleHamburMenu() {
+        setShowHambur(!showHambur)
+    }
+
     return (
         <header className="header">
             <Link className="header__img" to="/recipes">
@@ -39,37 +46,14 @@ const Header = () => {
                             />
                         </Link>
                         <FontAwesomeIcon
+                            onClick={handleHamburMenu}
                             className="header__menu__user--icons--fa"
                             icon={faBars}
                         />
                     </div>
                 </div>
 
-                <div className="header__menu__hambur .show">
-                    <div className="header__menu__hambur__top">
-                        <img
-                            src="https://i.imgur.com/nqsC2vJ.png"
-                            alt="small-logo"
-                        />
-                        <FontAwesomeIcon
-                            className="header__menu__hambur__top--fa"
-                            icon={faTimes}
-                        />
-                    </div>
-                    <div className="header__menu__hambur--search">
-                        <SearchInput />
-                    </div>
-                    <nav className="header__menu__hambur__menu">
-                        <a href="#">Account</a>
-                        <a href="#">Cart</a>
-                        <Link to="/recipes">Recipes</Link>
-                        <a href="#breakfast">Breakfasts</a>
-                        <a href="#lunches">Lunches</a>
-                        <a href="#dinners">Dinners</a>
-                        <a href="#">Plans</a>
-                        <a href="#">FAQ</a>
-                    </nav>
-                </div>
+                <HamburMenu show={showHambur} />
             </section>
         </header>
     )

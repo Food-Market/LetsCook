@@ -3,6 +3,11 @@ import { Link } from "react-router-dom"
 import { CardItem } from "../components/CardItem"
 import Layout from "../components/Layout"
 
+const urlRecipes = "http://161.35.124.63:3000/api/maestro"
+const urlBreakFast = "http://161.35.124.63:3000/api/maestro/type/breakfast"
+const urlLunch = "http://161.35.124.63:3000/api/maestro/type/lunch"
+const urlDinners = "http://161.35.124.63:3000/api/maestro/type/dinner"
+
 const Recipes = () => {
     return (
         <Layout>
@@ -18,7 +23,7 @@ const Recipes = () => {
                     </h2>
 
                     <div className="main__carousel__cards">
-                        <CardItem />
+                        <CardItem url={urlBreakFast} />
                     </div>
 
                     <h2 className="main__carousel--subtitles" id="lunches">
@@ -26,7 +31,7 @@ const Recipes = () => {
                     </h2>
 
                     <div className="main__carousel__cards">
-                        <CardItem />
+                        <CardItem url={urlLunch} />
                     </div>
 
                     <h2 className="main__carousel--subtitles" id="dinners">
@@ -34,7 +39,7 @@ const Recipes = () => {
                     </h2>
 
                     <div className="main__carousel__cards">
-                        <CardItem />
+                        <CardItem url={urlDinners} />
                     </div>
 
                     <section className="main__bottom">
