@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import SearchInput from "./SearchInput"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -10,28 +10,13 @@ import {
 
 import HamburMenu from "../components/HamburMenu"
 
-function useHamburMenu() {
-    useEffect(() => {
-        document
-            .getElementById("#hambur-icon")
-            .addEventListener("click", () => {
-                console.log("click")
-                document
-                    .querySelector(".header__menu__hambur")
-                    .classList.toggle("show")
-            })
-
-        document
-            .getElementById("#closed-icon")
-            .addEventListener("click", () => {
-                document
-                    .querySelector(".header__menu__hambur")
-                    .classList.toggle("show")
-            })
-    }, [])
-}
-
 const Header = () => {
+    const [showHambur, setShowHambur] = useState(false)
+
+    function handleHamburMenu() {
+        setShowHambur(!showHambur)
+    }
+
     return (
         <header className="header">
             <Link className="header__img" to="/recipes">
@@ -61,14 +46,14 @@ const Header = () => {
                             />
                         </Link>
                         <FontAwesomeIcon
+                            onClick={handleHamburMenu}
                             className="header__menu__user--icons--fa"
-                            id="hambur-icon"
                             icon={faBars}
                         />
                     </div>
                 </div>
 
-                <HamburMenu />
+                <HamburMenu show={showHambur} />
             </section>
         </header>
     )

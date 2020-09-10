@@ -5,8 +5,8 @@ import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons"
 
 import useRecipes from "../hooks/useRecipes"
 
-export const CardItem = () => {
-    const [recipes, isLoaded, error] = useRecipes()
+export const CardItem = (url) => {
+    const [recipes, isLoaded, error] = useRecipes(url)
 
     if (error) {
         return <div>Error: {error.message}</div>

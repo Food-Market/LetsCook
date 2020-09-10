@@ -62,7 +62,9 @@
                 width: 90%;
                 height: 90%;
                 margin: 2rem 1rem;
-                display: inline-block;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 cursor: pointer;
                 border-radius: $card__border-radius;
                 transition: 450ms all;
@@ -87,7 +89,7 @@
                     justify-content: space-evenly;
                     align-items: center;
                     padding: 1rem 0.8rem;
-                    font-size: 1.1rem;
+                    font-size: 0.9rem;
                     color: $color-main;
                     &:hover {
                         opacity: 1;

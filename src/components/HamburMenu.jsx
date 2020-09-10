@@ -1,15 +1,24 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import SearchInput from "../components/SearchInput"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/free-solid-svg-icons"
 
-const HamburMenu = () => {
+const HamburMenu = ({ show }) => {
+    const showHambur = () => {
+        if (show) {
+            return "show"
+        } else {
+            return ""
+        }
+    }
+
     return (
-        <div className="header__menu__hambur .show">
+        <div className={`header__menu__hambur ${showHambur()} `}>
             <div className="header__menu__hambur__top">
                 <img src="https://i.imgur.com/nqsC2vJ.png" alt="small-logo" />
                 <FontAwesomeIcon
+                    onClick={""}
                     className="header__menu__hambur__top--fa"
                     icon={faTimes}
                 />

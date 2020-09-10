@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react"
 
-function useRecipes() {
+function useRecipes({ url }) {
     const [recipes, setRecipes] = useState([])
     const [isLoaded, setIsLoaded] = useState(false)
     const [error, setError] = useState(null)
 
     useEffect(() => {
-        fetch("http://161.35.124.63:3000/api/maestro")
+        fetch(url)
             .then((response) => response.json())
             .then(
                 (result) => {
