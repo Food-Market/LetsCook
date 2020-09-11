@@ -54,14 +54,13 @@ $titleFont: "Roboto Condensed", sans-serif;
 
 @mixin ingredientStepStyle {
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-color: $color-backgroud;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 50% 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 @mixin ingredientStepStyle1024 {
@@ -140,13 +139,11 @@ $titleFont: "Roboto Condensed", sans-serif;
 @mixin stepStyle {
     width: 100%;
     height: 100%;
+    padding: 15px;
     background-color: $color-backgroud;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
 }
 
 @mixin stepStyleParagraph {
@@ -156,8 +153,11 @@ $titleFont: "Roboto Condensed", sans-serif;
     text-align: justify;
     margin-left: 5px;
     font-family: $textFont;
-    font-size: 15px;
+    font-size: 16px;
     color: $color-main;
+    li {
+        list-style: decimal;
+    }
 }
 
 @mixin stepStyleParagraph1024 {
@@ -315,8 +315,6 @@ $titleFont: "Roboto Condensed", sans-serif;
 
 .main-ingredients__container1 .main-ingredientes__name {
     @include ingredientNameStyle;
-    grid-row: 1/2;
-    grid-column: 2/3;
 }
 
 .main-ingredients__container1 .main-ingredients__quantity {
@@ -466,7 +464,7 @@ $titleFont: "Roboto Condensed", sans-serif;
     @include stepStyle;
 }
 
-.main-steps__container p {
+.main-steps__container ol {
     @include stepStyleParagraph;
 }
 
@@ -692,7 +690,7 @@ $titleFont: "Roboto Condensed", sans-serif;
     .main-steps h1 {
         @include titleStyle1024;
     }
-    .main-steps__container p {
+    .main-steps__container ol {
         @include stepStyleParagraph1024;
     }
     .main-rate h1 {
