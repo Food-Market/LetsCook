@@ -1,3 +1,5 @@
+<center>
+
 ![letscook logo](https://i.imgur.com/kjBXVvE.png "letscook logo")
 
 ![](https://img.shields.io/github/stars/Food-Market/letscook) ![](https://img.shields.io/github/forks/Food-Market/letscook)
@@ -6,13 +8,21 @@
 
 # 🍛🥗 Lets Cook - Food Market 👩‍🍳👨‍🍳
 
+  </center>
+
 It Is a website for gastronomy passionates that don't have time to buy the products for their preparations.
 
 The startup offers attractive subscriptions plans, great customer service and a high quality in the products.
 
-**SITE:** http://app-letscook.herokuapp.com/
+**SITE:**
+
+### http://app-letscook.herokuapp.com/
+
+<center>
 
 ![Previe-imagen](https://i.imgur.com/gtQVQGM.png)
+
+</center>
 
 ---
 
@@ -66,7 +76,10 @@ npm run start
 
 ## 🛠 Deployment
 
--   GitHub main repository
+-   GitHub main repository:
+
+    #### [https://github.com/Food-Market/LetsCook/](https://github.com/Food-Market/LetsCook/)
+
 -   Heroku
 
 ---
