@@ -32,38 +32,29 @@ const RecipeDetails = (props) => {
                                 <img
                                     src="https://i.imgur.com/KvO2QIm.png"
                                     className="main-introduction__timerIcon"
-                                    alt=""
+                                    alt="timer-icon"
                                 />
                             </div>
-                            <p>{recipe.des_description}</p>
-                            <div className="main-introduction__loveIcon">
-                                <a href=""></a>
+                            <div className="main-introduction--description">
+                                <p>{recipe.des_description}</p>
                             </div>
-                            <div className="main-introduction__shareIcon">
-                                <a href=""></a>
-                            </div>
+                            <div className="main-introduction__loveIcon"></div>
+                            <div className="main-introduction__shareIcon"></div>
                         </section>
                         <section className="main-ingredients">
+                            <h2>Ingredients</h2>
                             <div className="main-ingredients__container1">
-                                {recipe.list_ingredients
-                                    .split(",")
-                                    .map((item) => {
-                                        return (
-                                            <ul>
-                                                <li className="main-ingredientes__name">
-                                                    {item}
-                                                </li>
-                                            </ul>
-                                        )
-                                    })}
-
-                                <p className="main-ingredients__quantity">
-                                    150 g.
-                                </p>
+                                <ul className="main-ingredientes__name">
+                                    {recipe.list_ingredients
+                                        .split(",")
+                                        .map((item) => {
+                                            return <li>{item}</li>
+                                        })}
+                                </ul>
                             </div>
                         </section>
                         <section className="main-steps">
-                            <h1>Steps</h1>
+                            <h2>Steps</h2>
                             <div className="main-steps__container">
                                 <ol>
                                     {recipe.list_steps
@@ -75,7 +66,7 @@ const RecipeDetails = (props) => {
                             </div>
                         </section>
                         <section className="main-rate">
-                            <h1>Rater this recipe</h1>
+                            <h2>Rater this recipe</h2>
                             <div className="main-rate__icons">
                                 <a href="" className="main-rate__icon"></a>
                                 <a href="" className="main-rate__icon"></a>
